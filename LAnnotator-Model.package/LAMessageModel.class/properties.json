@@ -6,8 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"relations",
-		"text"
+		"messageRelations",
+		"messageRelationIds"
 	],
 	"name" : "LAMessageModel",
 	"type" : "normal"

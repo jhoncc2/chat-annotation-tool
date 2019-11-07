@@ -1,3 +1,3 @@
 as yet unclassified
 modelExists: aMessageModel 
-	self halt.
+	^ self anySatisfy: [:e | e = aMessageModel].

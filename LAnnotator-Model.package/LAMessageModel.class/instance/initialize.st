@@ -1,4 +1,5 @@
 as yet unclassified
 initialize
 	super initialize.
-	relations := LAMessageModels new.
+	messageRelations  := LAMessageModels new.
+	messageRelationIds := LAMessageModels new.

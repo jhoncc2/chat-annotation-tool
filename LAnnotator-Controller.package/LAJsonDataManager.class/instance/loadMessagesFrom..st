@@ -1,9 +1,8 @@
 as yet unclassified
 loadMessagesFrom: aUriString
-	
-	DSModelJsonMapping 
-			read: #CollectionOfMessages 
-			withMapping: #collectionOfMessagesMappingFor:
-			on: aUriString asFileReference readStream
-	
-	
+	self messageModels: (LAModelJsonMapping 
+			read: #LACollectionOfMessages 
+			withMapping: #collectionOfLAMessagesMappingFor:
+			on: aUriString asFileReference readStream).
+	"after loading relations"	
+	self messageModels do: [ :e | e assembleRelations: self messageModels ]
