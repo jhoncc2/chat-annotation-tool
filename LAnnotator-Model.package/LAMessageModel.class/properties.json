@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "DSMessage",
+	"category" : "LAnnotator-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"relations",
+		"text"
+	],
+	"name" : "LAMessageModel",
+	"type" : "normal"
+}

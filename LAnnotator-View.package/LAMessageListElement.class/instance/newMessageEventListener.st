@@ -1,0 +1,3 @@
+initialization
+newMessageEventListener
+	^ LAMessageEventListener new

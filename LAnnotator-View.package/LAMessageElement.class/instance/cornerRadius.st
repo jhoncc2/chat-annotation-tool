@@ -1,0 +1,3 @@
+drawing
+cornerRadius
+	^ 8

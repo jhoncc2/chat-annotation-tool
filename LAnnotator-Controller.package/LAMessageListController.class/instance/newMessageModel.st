@@ -1,0 +1,3 @@
+initialization
+newMessageModel
+	^ LAMessageModel new

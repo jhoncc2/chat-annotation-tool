@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "LAnnotator-Controller",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"view",
+		"messageModels"
+	],
+	"name" : "LAMessageListController",
+	"type" : "normal"
+}

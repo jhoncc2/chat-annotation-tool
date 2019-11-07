@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "BlElementEventListener",
+	"category" : "LAnnotator-View",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"controller",
+		"element"
+	],
+	"name" : "LAMessageEventListener",
+	"type" : "normal"
+}

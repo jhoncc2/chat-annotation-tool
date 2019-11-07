@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "LABaseElement",
+	"category" : "LAnnotator-View",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"message",
+		"isMouseOver",
+		"textElement",
+		"selected"
+	],
+	"name" : "LAMessageElement",
+	"type" : "normal"
+}

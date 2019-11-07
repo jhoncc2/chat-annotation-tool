@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "BlTextElement",
+	"category" : "LAnnotator-View-widgets",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"message",
+		"isMouseOver",
+		"textElement"
+	],
+	"name" : "LATextMessageElement",
+	"type" : "normal"
+}

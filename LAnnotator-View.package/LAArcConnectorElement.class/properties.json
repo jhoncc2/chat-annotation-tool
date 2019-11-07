@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "BlParabollaArcElement",
+	"category" : "LAnnotator-View",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"vertical"
+	],
+	"name" : "LAArcConnectorElement",
+	"type" : "normal"
+}

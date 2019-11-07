@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "LABoxWidgetElement",
+	"category" : "LAnnotator-View",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "LALayoutBoxElement",
+	"type" : "normal"
+}

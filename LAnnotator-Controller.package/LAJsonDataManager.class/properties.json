@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "LADataProvider",
+	"category" : "LAnnotator-Controller",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"messageModels",
+		"iterationCounter"
+	],
+	"name" : "LAJsonDataManager",
+	"type" : "normal"
+}

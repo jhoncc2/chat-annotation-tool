@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "LABaseElement",
+	"category" : "LAnnotator-View",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"messages",
+		"controller",
+		"messageEventListener",
+		"messagesSelected",
+		"firstMessageSelected"
+	],
+	"name" : "LAMessageListElement",
+	"type" : "normal"
+}

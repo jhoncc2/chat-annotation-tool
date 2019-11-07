@@ -1,0 +1,3 @@
+accessing
+setVertical
+	vertical := true
