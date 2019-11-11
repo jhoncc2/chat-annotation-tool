@@ -7,7 +7,9 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"messageModels",
-		"iterationCounter"
+		"iterationCounter",
+		"counter",
+		"filePath"
 	],
 	"name" : "LAJsonDataManager",
 	"type" : "normal"

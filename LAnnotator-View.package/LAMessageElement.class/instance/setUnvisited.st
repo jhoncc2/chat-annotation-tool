@@ -1,0 +1,3 @@
+initialize
+setUnvisited
+	visited := false

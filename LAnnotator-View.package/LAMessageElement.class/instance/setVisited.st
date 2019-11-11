@@ -1,0 +1,3 @@
+initialize
+setVisited
+	visited := true

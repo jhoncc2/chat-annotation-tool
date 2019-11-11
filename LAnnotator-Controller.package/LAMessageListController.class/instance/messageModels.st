@@ -1,3 +1,3 @@
 initialization
 messageModels
-	^ messageModels
+	^ self dataProvider messageModels

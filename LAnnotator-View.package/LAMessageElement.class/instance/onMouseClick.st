@@ -1,7 +1,10 @@
 event-handling
 onMouseClick
 	self selected
-		ifTrue: [ self parent onMessageUnselected: self.
-			selected := false ]
-		ifFalse: [ self parent onMessageSelected: self.
-			selected := true ]
+		ifTrue: [ 
+			Transcript show: 'unselect.'; cr.
+			self parent onMessageUnselected: self.
+		] ifFalse: [ 
+			Transcript show: 'select.'; cr.
+			self parent onMessageSelected: self.
+		]

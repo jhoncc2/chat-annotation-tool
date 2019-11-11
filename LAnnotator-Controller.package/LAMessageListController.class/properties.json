@@ -2,12 +2,14 @@
 	"commentStamp" : "",
 	"super" : "Object",
 	"category" : "LAnnotator-Controller",
-	"classinstvars" : [ ],
+	"classinstvars" : [
+		"instance"
+	],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
 		"view",
-		"messageModels"
+		"dataProvider"
 	],
 	"name" : "LAMessageListController",
 	"type" : "normal"

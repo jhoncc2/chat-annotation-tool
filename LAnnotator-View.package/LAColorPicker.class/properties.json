@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "LAnnotator-View",
+	"classinstvars" : [
+		"iterator",
+		"colorList"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "LAColorPicker",
+	"type" : "normal"
+}

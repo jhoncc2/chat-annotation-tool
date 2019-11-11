@@ -1,3 +1,3 @@
 as yet unclassified
 mockMessages
-	^ DSMessages threeItems
+	^ DSMessages threeItems collect: [ :e | LAMessageModel new copyFrom: e ]

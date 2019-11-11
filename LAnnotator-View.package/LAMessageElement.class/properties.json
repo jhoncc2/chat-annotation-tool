@@ -9,7 +9,10 @@
 		"message",
 		"isMouseOver",
 		"textElement",
-		"selected"
+		"selected",
+		"messageElementRelations",
+		"groupedColor",
+		"visited"
 	],
 	"name" : "LAMessageElement",
 	"type" : "normal"

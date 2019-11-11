@@ -1,3 +1,4 @@
 event-handling
 onUnselected
-	self background: self unselectedColor 
+	selected := false.
+	self background: self groupedColor  

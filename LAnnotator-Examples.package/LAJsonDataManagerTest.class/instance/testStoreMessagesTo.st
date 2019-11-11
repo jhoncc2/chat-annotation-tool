@@ -2,7 +2,8 @@ as yet unclassified
 testStoreMessagesTo
 	| inst |
 	inst := LAJsonDataManager new.
-	inst loadMessagesFrom: '/Users/jhonc/Documents/Pharo/images/Pharo 7.0 - annotation-0.2/pharo-local/iceberg/jhoncc2/chat-annotation-tool/data/la-messages-test.json'.
+	 
+	inst loadMessagesFrom: FileLocator imageDirectory  / 'pharo-local/iceberg/jhoncc2/chat-annotation-tool/data/la-messages-test.json'.
 	
 	inst messageModels first createRelationWith: inst messageModels second.
 	"assert relation"
@@ -13,9 +14,9 @@ testStoreMessagesTo
 			equals: inst messageModels first. 
 
 
-	inst storeMessagesTo: '/Users/jhonc/Documents/Pharo/images/Pharo 7.0 - annotation-0.2/pharo-local/iceberg/jhoncc2/chat-annotation-tool/data/la-messages-test-modified.json'.
+	inst storeMessagesTo: FileLocator imageDirectory  / 'pharo-local/iceberg/jhoncc2/chat-annotation-tool/data/la-messages-test-modified.json'.
 	
-	inst loadMessagesFrom: '/Users/jhonc/Documents/Pharo/images/Pharo 7.0 - annotation-0.2/pharo-local/iceberg/jhoncc2/chat-annotation-tool/data/la-messages-test-modified.json'.
+	inst loadMessagesFrom: FileLocator imageDirectory  / 'pharo-local/iceberg/jhoncc2/chat-annotation-tool/data/la-messages-test-modified.json'.
 	
 	self assert: inst messageModels size equals: 5. 
 	self assert: inst messageModels first class equals: LAMessageModel.

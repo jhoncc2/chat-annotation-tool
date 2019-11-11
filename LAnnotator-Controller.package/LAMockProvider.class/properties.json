@@ -7,7 +7,9 @@
 	],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"messageModels"
+	],
 	"name" : "LAMockProvider",
 	"type" : "normal"
 }

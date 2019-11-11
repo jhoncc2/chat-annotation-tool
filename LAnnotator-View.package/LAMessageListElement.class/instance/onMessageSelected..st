@@ -1,14 +1,14 @@
 initialization
 onMessageSelected: aLAMessageElement
-	self messagesSelected < 3 ifFalse: [ ^ self. ].
- 	self increaseMessagesSelected.
-	self messagesSelected == 2 ifTrue: [
+	
+	aLAMessageElement onSelected.
+	
+	firstMessageSelected isNotNil ifTrue: [
+			self connectMessageElement: firstMessageSelected with: aLAMessageElement.
+			
 			firstMessageSelected onUnselected. 
 			aLAMessageElement  onUnselected.
-			controller relateMessage: firstMessageSelected messageModel 
-						with: aLAMessageElement messageModel.
-			self resetMessagesSelected.
+			firstMessageSelected := nil.
 		] ifFalse: [
 			firstMessageSelected := aLAMessageElement.
-			aLAMessageElement onSelected.
 		]

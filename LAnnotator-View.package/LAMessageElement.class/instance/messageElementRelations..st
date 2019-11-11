@@ -1,0 +1,3 @@
+drawing
+messageElementRelations: aMessageElementList
+	messageElementRelations := aMessageElementList
