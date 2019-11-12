@@ -1,5 +1,5 @@
 as yet unclassified
-connectMessageElement: aMElement with: bMElement
+connectMessageElement: aMElement with: bMElement allowArcs: arckBool
 	| arc v |
 	aMElement ifNil: [ ^ self ].
 	bMElement ifNil: [ ^ self ].
@@ -16,7 +16,8 @@ connectMessageElement: aMElement with: bMElement
 			v first colorConnectedMessages: v first groupedColor 
 		].
 	
-	
+	arckBool ifFalse: [ ^self ].
+	 
 	"add arc"
 	arc := LAArcConnectorElement new setVertical; yourself.
 	(aMElement isBefore: bMElement) 

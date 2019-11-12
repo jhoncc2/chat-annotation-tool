@@ -11,7 +11,8 @@
 		"messageEventListener",
 		"messagesSelected",
 		"firstMessageSelected",
-		"messageElements"
+		"messageElements",
+		"isDeleteActive"
 	],
 	"name" : "LAMessageListElement",
 	"type" : "normal"

@@ -2,7 +2,9 @@
 	"commentStamp" : "",
 	"super" : "LADataProvider",
 	"category" : "LAnnotator-Controller",
-	"classinstvars" : [ ],
+	"classinstvars" : [
+		"instance"
+	],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [

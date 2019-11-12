@@ -8,7 +8,8 @@
 	"instvars" : [
 		"messageRelations",
 		"messageRelationIds",
-		"messageElement"
+		"messageElement",
+		"parsedContent"
 	],
 	"name" : "LAMessageModel",
 	"type" : "normal"

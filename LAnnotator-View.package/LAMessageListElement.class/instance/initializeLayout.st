@@ -6,7 +6,7 @@ initializeLayout
 	self
 		layout: tmp2 yourself;
 		padding: (BlInsets all: 20);
-		size: 500@700
-		"constraintsDo: [ :c | 
-			c horizontal fitContent.
-			c vertical fitContent ]"
+		width: 600;
+		constraintsDo: [ :c | 
+			"c horizontal fitContent."
+			c vertical fitContent ]

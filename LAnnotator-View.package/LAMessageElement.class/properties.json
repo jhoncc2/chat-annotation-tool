@@ -12,7 +12,9 @@
 		"selected",
 		"messageElementRelations",
 		"groupedColor",
-		"visited"
+		"visited",
+		"delSelected",
+		"elementArcs"
 	],
 	"name" : "LAMessageElement",
 	"type" : "normal"

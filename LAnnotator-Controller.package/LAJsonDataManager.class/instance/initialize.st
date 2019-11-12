@@ -1,3 +1,3 @@
 as yet unclassified
 initialize
-	counter := 0
+	counter := 0.

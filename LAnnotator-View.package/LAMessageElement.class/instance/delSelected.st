@@ -1,0 +1,3 @@
+event-handling
+delSelected
+	^ delSelected
