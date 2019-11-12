@@ -1,16 +1,18 @@
 as yet unclassified
 connectMessageElement: aMElement with: bMElement
-	| arc v colorGroup |
+	| arc v |
+	(aMElement isRelatedWithMessageElement: bMElement) ifTrue: [ ^ self ].
 	
-	controller relateMessage: aMElement messageModel 
-						with: bMElement messageModel.
 	aMElement createRelationWithElement: bMElement.
 	
 	"update color group"
 	v := { aMElement. bMElement } select: #visited.
 	v isEmpty 
 		ifTrue: [ aMElement colorConnectedMessages: LAColorPicker nextColor ]
-		ifFalse: [ v first colorConnectedMessages: v first groupedColor ].
+		ifFalse: [ 
+			v first resetVisitingCheck. 
+			v first colorConnectedMessages: v first groupedColor 
+		].
 	
 	
 	"add arc"

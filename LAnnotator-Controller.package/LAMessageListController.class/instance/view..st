@@ -1,3 +1,5 @@
 initialization
-view: arg1
-	view := arg1
+view: aLAView
+	view := aLAView.
+	view controller: self.
+	

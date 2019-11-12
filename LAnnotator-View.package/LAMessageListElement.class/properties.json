@@ -10,7 +10,8 @@
 		"controller",
 		"messageEventListener",
 		"messagesSelected",
-		"firstMessageSelected"
+		"firstMessageSelected",
+		"messageElements"
 	],
 	"name" : "LAMessageListElement",
 	"type" : "normal"

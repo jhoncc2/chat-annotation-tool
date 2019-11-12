@@ -7,6 +7,6 @@ openOnFile: readf
 				view: self newView.
 	
 	space := BlSpace new.
-	space extent: 800 @ 420.
+	space extent: 600@520.
 	space root addChild: instance view asScrollableElement.
 	space show
