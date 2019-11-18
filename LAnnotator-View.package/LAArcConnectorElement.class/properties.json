@@ -1,13 +1,15 @@
 {
-	"commentStamp" : "",
-	"super" : "BlParabollaArcElement",
-	"category" : "LAnnotator-View",
-	"classinstvars" : [ ],
-	"pools" : [ ],
+	"classtraitcomposition" : "TBlEventTarget classTrait",
 	"classvars" : [ ],
 	"instvars" : [
 		"vertical"
 	],
 	"name" : "LAArcConnectorElement",
-	"type" : "normal"
+	"commentStamp" : "",
+	"super" : "BlParabollaArcElement",
+	"traitcomposition" : "TBlEventTarget",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "LAnnotator-View"
 }

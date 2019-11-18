@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "BrDropdown",
+	"category" : "LAnnotator-View",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"controller",
+		"optionList",
+		"elementList",
+		"laTargetElement"
+	],
+	"name" : "LADropDownElement",
+	"type" : "normal"
+}
