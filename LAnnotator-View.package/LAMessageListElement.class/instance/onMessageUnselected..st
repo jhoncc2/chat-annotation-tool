@@ -1,5 +1,5 @@
-initialization
+event-handling
 onMessageUnselected: aLAMessageElement
 	aLAMessageElement onUnselected.
 	messagesSelected := messagesSelected -1.
-	firstMessageSelected := nil.
+	messageSelectedIndex := nil.

@@ -1,4 +1,4 @@
-as yet unclassified
+annotation-action
 connectMessageElement: aMElement with: bMElement
 	| arc v |
 	aMElement ifNil: [ ^ self ].
@@ -15,7 +15,6 @@ connectMessageElement: aMElement with: bMElement
 			v first resetVisitingCheck. 
 			v first colorConnectedMessages: v first groupedColor 
 		].
-	
 	
 	"add arc"
 	arc := LAArcConnectorElement new setVertical; yourself.

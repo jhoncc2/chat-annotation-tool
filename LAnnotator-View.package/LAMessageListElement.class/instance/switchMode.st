@@ -1,4 +1,4 @@
-initialization
+event-handling
 switchMode
 	Transcript show: 'deleteActive:'; show: self isDeleteActive not; cr. 
 	self isDeleteActive 

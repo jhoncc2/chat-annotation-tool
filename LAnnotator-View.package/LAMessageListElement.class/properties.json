@@ -10,9 +10,9 @@
 		"controller",
 		"messageEventListener",
 		"messagesSelected",
-		"firstMessageSelected",
 		"messageElements",
-		"isDeleteActive"
+		"isDeleteActive",
+		"messageSelectedIndex"
 	],
 	"name" : "LAMessageListElement",
 	"type" : "normal"

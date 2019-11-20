@@ -1,8 +1,8 @@
-initialization
+loading
 loadMessages: messageModelsList
 
 	messageModelsList
-		do: [ :model | 
+		do: [ :model |
 			self addMessageModelasElement: model
 		].
 	

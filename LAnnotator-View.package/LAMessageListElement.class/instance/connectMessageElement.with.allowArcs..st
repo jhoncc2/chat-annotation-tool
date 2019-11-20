@@ -1,5 +1,6 @@
-as yet unclassified
+annotation-action
 connectMessageElement: aMElement with: bMElement allowArcs: arckBool
+	"the method is developed as a workaround for untangling annotation of saved data"
 	| arc v |
 	aMElement ifNil: [ ^ self ].
 	bMElement ifNil: [ ^ self ].

@@ -1,4 +1,4 @@
-initialization
+loading
 updateMessages
 	self controller messageModels
 		do: [ :model | 

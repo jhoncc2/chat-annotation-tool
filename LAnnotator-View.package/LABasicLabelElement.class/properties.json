@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "BrDropdown",
+	"super" : "BrLabel",
 	"category" : "LAnnotator-View",
 	"classinstvars" : [ ],
 	"pools" : [ ],
@@ -11,6 +11,6 @@
 		"elementList",
 		"laTargetElement"
 	],
-	"name" : "LADropDownElement",
+	"name" : "LABasicLabelElement",
 	"type" : "normal"
 }
