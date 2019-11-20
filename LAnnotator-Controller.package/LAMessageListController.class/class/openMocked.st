@@ -1,9 +1,10 @@
 instance creation
 openMocked
-	| tmp1 tmp3 |
-	tmp3 := self new.
-	tmp3
-		messageModels: LAMockProvider instance collectMessageModels;
+	| this dp |
+	this := self new.
+	dp := LAMockProvider instance.
+	this
+		dataProvider: dp;
 		view: self newView.
-	tmp1 := tmp3 yourself.
-	^ tmp1 view asScrollableElement
+	this loadMessagesFrom: 0 to: 10. 
+	^ this view asScrollableElement

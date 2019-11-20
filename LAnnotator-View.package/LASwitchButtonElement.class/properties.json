@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "BlElement",
+	"category" : "LAnnotator-View-widgets",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"active",
+		"toggleButtonIcon",
+		"whenActiveDo",
+		"whenDeactivateDo"
+	],
+	"name" : "LASwitchButtonElement",
+	"type" : "normal"
+}

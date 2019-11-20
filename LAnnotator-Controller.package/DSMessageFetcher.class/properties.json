@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "LAnnotator-Controller-Utils",
+	"classinstvars" : [
+		"instance"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"channels",
+		"fileNames",
+		"messages"
+	],
+	"name" : "DSMessageFetcher",
+	"type" : "normal"
+}

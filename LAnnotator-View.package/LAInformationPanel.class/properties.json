@@ -1,16 +1,14 @@
 {
 	"commentStamp" : "",
-	"super" : "BrLabel",
+	"super" : "LAPanelElement",
 	"category" : "LAnnotator-View",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"controller",
-		"optionList",
-		"elementList",
-		"laTargetElement"
+		"untanglingModeButton",
+		"controller"
 	],
-	"name" : "LADropDownElement",
+	"name" : "LAInformationPanel",
 	"type" : "normal"
 }

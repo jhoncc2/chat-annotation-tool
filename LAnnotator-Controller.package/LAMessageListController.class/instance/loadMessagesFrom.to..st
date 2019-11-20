@@ -1,4 +1,5 @@
 initialization
 loadMessagesFrom: ini to: end
-	view loadMessages: (self dataProvider getMessagesFrom: ini to: end)
+	<deprecated>
+	view loadMessages: (self getMessagesFrom: ini to: end)
 	

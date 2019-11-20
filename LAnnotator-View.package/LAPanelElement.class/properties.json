@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "BlElement",
+	"super" : "LABaseElement",
 	"category" : "LAnnotator-View",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "LABaseElement",
+	"name" : "LAPanelElement",
 	"type" : "normal"
 }

@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "BlElement",
-	"category" : "LAnnotator-View",
+	"super" : "BlEvent",
+	"category" : "LAnnotator-View-Event",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "LABaseElement",
+	"name" : "LAInterfaceEvent",
 	"type" : "normal"
 }
