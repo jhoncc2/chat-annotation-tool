@@ -7,4 +7,4 @@ keyDownEvent: anEvent
 	[target class = LAMessageListElement] whileFalse: [ 
 		target := target parent.	
 	]. 
-	target switchMode
+	target switchUntagling

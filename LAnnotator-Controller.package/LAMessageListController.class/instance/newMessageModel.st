@@ -1,3 +1,3 @@
 initialization
 newMessageModel
-	^ LAMessageModel new
+	^ LADiscordModel new

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "LAMessageElement",
+	"category" : "LAnnotator-View",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "LAJkkElement",
+	"type" : "normal"
+}

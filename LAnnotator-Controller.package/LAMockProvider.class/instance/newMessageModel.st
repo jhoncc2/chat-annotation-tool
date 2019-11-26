@@ -1,3 +1,3 @@
 instance creation
 newMessageModel
-	^ LAMessageModel new
+	^ LADiscordModel new

@@ -6,13 +6,15 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"messages",
 		"controller",
-		"messageEventListener",
-		"messagesSelected",
+		"messageSelectedIndex",
 		"messageElements",
+		"anchoredMessage",
+		"messagesSelected",
+		"uiIndex",
 		"isDeleteActive",
-		"messageSelectedIndex"
+		"messageClass",
+		"label"
 	],
 	"name" : "LAMessageListElement",
 	"type" : "normal"

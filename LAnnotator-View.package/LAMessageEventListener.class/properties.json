@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "BlElementEventListener",
-	"category" : "LAnnotator-View",
+	"category" : "LAnnotator-View-Event",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

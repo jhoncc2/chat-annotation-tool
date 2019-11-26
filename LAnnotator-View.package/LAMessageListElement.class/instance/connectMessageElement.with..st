@@ -10,7 +10,7 @@ connectMessageElement: aMElement with: bMElement
 	"update color group"
 	v := { aMElement. bMElement } select: #visited.
 	v isEmpty 
-		ifTrue: [ aMElement colorConnectedMessages: LAColorPicker nextColor ]
+		ifTrue: [ aMElement colorConnectedMessages: LAColorPicker instance nextColor ]
 		ifFalse: [ 
 			v first resetVisitingCheck. 
 			v first colorConnectedMessages: v first groupedColor 

@@ -1,5 +1,6 @@
 event-handling
 findRoot
+	<Deprecated>
 	| earliestMessage |
 	earliestMessage := self firstMessageElement.
 	(self isBefore: earliestMessage) 

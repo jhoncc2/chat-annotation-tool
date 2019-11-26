@@ -1,0 +1,3 @@
+initialization
+messageClass: aLAMessaceElementClass
+	^ listView messageClass: aLAMessaceElementClass

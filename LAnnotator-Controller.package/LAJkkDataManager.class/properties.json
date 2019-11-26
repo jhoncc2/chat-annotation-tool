@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "LAFileDataProvider",
+	"category" : "LAnnotator-Controller",
+	"classinstvars" : [
+		"instance"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "LAJkkDataManager",
+	"type" : "normal"
+}

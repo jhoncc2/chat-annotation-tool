@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "LAnnotator-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"messageRelations",
+		"messageRelationIds",
+		"messageElement",
+		"parsedContent",
+		"username",
+		"time",
+		"content",
+		"timestamp"
+	],
+	"name" : "LAJkkModel",
+	"type" : "normal"
+}

@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "LACircleElement",
+	"category" : "LAnnotator-View",
+	"classinstvars" : [
+		"colorPicker",
+		"colorDict"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"thumbstring",
+		"textView"
+	],
+	"name" : "LAUserThumbnail",
+	"type" : "normal"
+}

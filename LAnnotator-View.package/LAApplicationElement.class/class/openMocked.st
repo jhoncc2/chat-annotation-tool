@@ -9,6 +9,7 @@ openMocked
 	self instance controller: controller.
 	controller dataProvider: dataManager;
 				view: self instance.
+	self instance messageClass: LADiscordElement.
 	
 	self instance loadMessagesFrom: 0 to: 20.
 	

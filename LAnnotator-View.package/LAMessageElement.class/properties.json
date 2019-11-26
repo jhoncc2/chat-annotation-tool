@@ -14,7 +14,9 @@
 		"groupedColor",
 		"visited",
 		"delSelected",
-		"elementArcs"
+		"elementArcs",
+		"indexLabel",
+		"index"
 	],
 	"name" : "LAMessageElement",
 	"type" : "normal"

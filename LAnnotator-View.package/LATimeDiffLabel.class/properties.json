@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "LABasicLabelElement",
+	"category" : "LAnnotator-View",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"attachment"
+	],
+	"name" : "LATimeDiffLabel",
+	"type" : "normal"
+}

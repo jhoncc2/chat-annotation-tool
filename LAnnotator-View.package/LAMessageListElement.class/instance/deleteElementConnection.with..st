@@ -25,7 +25,9 @@ deleteElementConnection: aMElement with: bMElement
 	"add arc"
 	arc := aMElement elementArcs select: [ :a | bMElement elementArcs anySatisfy: [ :b | a = b ] ].
 	
-	aMElement elementArcs remove: arc first.
-	bMElement elementArcs remove: arc first.
+	arc ifNotEmpty: [
+		aMElement elementArcs remove: arc first.
+		bMElement elementArcs remove: arc first. ].
+	
 	
 	self removeChild: arc first.

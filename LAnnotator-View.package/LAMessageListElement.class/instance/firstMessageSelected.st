@@ -1,4 +1,5 @@
 initialization
 firstMessageSelected
-	messageSelectedIndex ifNil: [ ^ nil ].
+
+	messageSelectedIndex == 0 ifTrue: [ ^ nil ].
 	^ messageElements at: messageSelectedIndex 

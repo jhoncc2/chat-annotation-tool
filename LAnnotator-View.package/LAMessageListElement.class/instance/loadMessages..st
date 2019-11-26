@@ -1,9 +1,14 @@
 loading
 loadMessages: messageModelsList
-
+	|lastAdded | 
+	lastAdded := nil.
 	messageModelsList
-		do: [ :model |
-			self addMessageModelasElement: model
+		doWithIndex: [ :model :i |
+			lastAdded ifNotNil: [ 
+				self addTimeLapsedBetween: lastAdded and: model.
+			].
+			lastAdded := model.
+			self addMessageModelasElement: model index: uiIndex + i.
 		].
 	
 	"update saved connections"

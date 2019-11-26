@@ -13,5 +13,4 @@ handlgeUntangleElement: aMessageEl with: bMessageEl
 						with: bMessageEl messageModel.
 				"create relation at view level"
 				self connectMessageElement: aMessageEl with: bMessageEl.
-						
 			].

@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "LADataProvider",
+	"category" : "LAnnotator-Controller",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"messageModels",
+		"filePath",
+		"counter",
+		"iterationCounter"
+	],
+	"name" : "LAFileDataProvider",
+	"type" : "normal"
+}

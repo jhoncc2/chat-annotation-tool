@@ -1,4 +1,4 @@
 accessing
 newInstance
-	instance := nil.
+	instance := self new.
 	^ self instance.

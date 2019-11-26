@@ -4,11 +4,15 @@
 	"category" : "LAnnotator-View",
 	"classinstvars" : [
 		"iterator",
-		"colorList"
+		"colorList",
+		"instance"
 	],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"iterator",
+		"colorList"
+	],
 	"name" : "LAColorPicker",
 	"type" : "normal"
 }

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "LAInterfaceEvent",
+	"category" : "LAnnotator-View-Event",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "LAUEventAnnotateNext",
+	"type" : "normal"
+}

@@ -1,0 +1,3 @@
+initialize
+initializeEvents
+	super initializeEvents.

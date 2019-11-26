@@ -1,3 +1,3 @@
 accessing
 newMessageElement: aMessageModel
-	^ LAMessageElement newWithModel: aMessageModel
+	^ self messageClass newWithModel: aMessageModel

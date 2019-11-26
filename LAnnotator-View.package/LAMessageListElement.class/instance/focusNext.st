@@ -2,6 +2,7 @@ focus
 focusNext
 	"self assert: self firstMessageSelected isNotNil
 		description: 'No element selected'."
+	self anchoredMessage ifTrue: [ ^ self. ].
 	self firstMessageSelected ifNil: [ ^ self. ].
 	
 	self firstMessageSelected onUnselected.

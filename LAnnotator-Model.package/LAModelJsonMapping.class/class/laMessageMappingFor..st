@@ -1,7 +1,7 @@
 mapping - message
 laMessageMappingFor: aNeoJSONMapper
 	aNeoJSONMapper
-		for: LAMessageModel do: [ :mapping |
+		for: LADiscordModel do: [ :mapping |
 	      mapping mapAccessor: #id.
 	      mapping mapAccessor: #channelId to: #channel_id.
 	      (mapping mapAccessor: #author) valueSchema: DSUser.
