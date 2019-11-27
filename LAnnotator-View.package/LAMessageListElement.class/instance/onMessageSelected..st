@@ -7,7 +7,7 @@ onMessageSelected: aLAMessageElement
 			self focusNone.
 		] ifFalse: [
 			messageSelectedIndex := messageElements indexOf: aLAMessageElement.
-			self focusMessageElement. 
 		].
 	
-	self anchoredMessage ifTrue: [ self firstMessageSelected onStrongSelected ]
+	self focusMessageElement.  
+	

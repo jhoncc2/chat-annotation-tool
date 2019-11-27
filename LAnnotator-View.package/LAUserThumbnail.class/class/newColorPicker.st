@@ -1,3 +1,4 @@
 accessing
 newColorPicker
-	colorPicker := LAColorPicker new
+	colorPicker := LAColorPicker new.
+	^ colorPicker 

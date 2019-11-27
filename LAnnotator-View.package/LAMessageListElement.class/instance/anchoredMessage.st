@@ -1,5 +1,3 @@
-focus
+event-handling
 anchoredMessage
-	"returns boolean"
-	^ anchoredMessage.
-	
+	^ anchoredMessage

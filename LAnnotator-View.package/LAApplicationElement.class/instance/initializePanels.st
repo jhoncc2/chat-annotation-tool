@@ -4,7 +4,7 @@ initializePanels
 	listView padding: (BlInsets bottom: 150).
 	
 	panelMessages := LAPanelElement new.
-	panelInfo := LAControlPanel new.
+	controlPanel := LAControlPanel new.
 	
 	"messagelist"
 	panelMessages look:  BrGlamorousWithHorizontalResizerLook.

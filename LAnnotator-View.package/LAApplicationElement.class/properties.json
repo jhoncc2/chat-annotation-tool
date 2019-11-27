@@ -10,7 +10,7 @@
 	"instvars" : [
 		"listView",
 		"panelMessages",
-		"panelInfo",
+		"controlPanel",
 		"controller"
 	],
 	"name" : "LAApplicationElement",

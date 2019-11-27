@@ -1,6 +1,6 @@
 initialization
 createUntanglingModeControl
-	| untMode cont |
+	| cont |
 	untanglingModeButton := LASwitchButtonElement new.  
 	untanglingModeButton viewModel label: 'Create'.
 	untanglingModeButton	
@@ -13,16 +13,17 @@ createUntanglingModeControl
 			self fireEvent: (LAUEventSwitchMode new deleteMode; yourself)
 			].
 	
-	untMode := LALayoutBoxElement horizontal. 
-	untMode addChild: (LABasicLabelElement text: 'Untangling mode').
-	untMode addChild: untanglingModeButton.
-	
 	cont := LALayoutBoxElement horizontal
 		background: (Color gray alpha: 0.2);
 		yourself.
 	cont addChild: (LALayoutBoxElement horizontal 
-							addChild: (LABasicLabelElement text: '[R]') ; 
+							addChild: (LABasicLabelElement text: '[R]') ;
 							yourself).
-	cont addChild: untMode.
-	
+	cont addChild: (LALayoutBoxElement horizontal 
+							addChild: (LABasicLabelElement text: 'Continuous annotation') ; 
+							alignLeft;
+							width: 150;
+							yourself).
+	cont addChild: untanglingModeButton.
+
 	self addChild: cont

@@ -11,4 +11,4 @@ initializeLayout
 	
 	
 	self addChild: panelMessages.
-	self addChild: panelInfo.
+	self addChild: controlPanel.

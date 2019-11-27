@@ -1,11 +1,14 @@
 initialization
-handleKeyupEvent: aEvent
-	
-	aEvent key name = #C ifTrue: [ ^ listView annotateNext ].
-	aEvent key name = #A ifTrue: [ ^ listView switchAnchorStatus ].
-	aEvent key name = #R ifTrue: [ ^ listView switchUntaglingMode ].
+handleKeyupEvent: anEvent
+	anEvent key name = #C ifTrue: [ anEvent consumed: true. ^ listView annotateNext ].
+	anEvent key name = #A ifTrue: [ 
+		anEvent consumed: true.
+		controlPanel switchAnchorStatus ].
+	anEvent key name = #R ifTrue: [ 
+		anEvent consumed: true.
+		controlPanel switchUntaglingMode ].
 	
 	"arrows"
-	aEvent key name = #ArrowDown ifTrue: [ ^ listView focusNext ].
-	aEvent key name = #ArrowUp ifTrue: [ ^ listView focusPrevious ].
+	anEvent key name = #ArrowDown ifTrue: [ ^ listView focusNext ].
+	anEvent key name = #ArrowUp ifTrue: [ ^ listView focusPrevious ].
 	

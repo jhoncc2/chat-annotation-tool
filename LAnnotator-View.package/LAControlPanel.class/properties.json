@@ -7,7 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"untanglingModeButton",
-		"controller"
+		"controller",
+		"anchorButton"
 	],
 	"name" : "LAControlPanel",
 	"type" : "normal"

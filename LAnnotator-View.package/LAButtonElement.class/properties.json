@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "BrButton",
+	"category" : "LAnnotator-View-widgets",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"text"
+	],
+	"name" : "LAButtonElement",
+	"type" : "normal"
+}

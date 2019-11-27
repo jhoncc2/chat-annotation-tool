@@ -1,10 +1,10 @@
-focus
+event-handling
 switchAnchorStatus
+	"self firstMessageSelected  ifNil: [ ^self ]."
 	anchoredMessage ifFalse: [
 		anchoredMessage := true.
-		self firstMessageSelected onStrongSelected.
 	] ifTrue: [ 
 		anchoredMessage := false.
-		self firstMessageSelected onSelected.
-	]
+	].
+	self focusMessageElement.
 	

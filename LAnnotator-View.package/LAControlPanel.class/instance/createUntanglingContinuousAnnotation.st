@@ -1,13 +1,10 @@
 initialization
 createUntanglingContinuousAnnotation
 	| cont nextButton |
-	nextButton := LASwitchButtonElement new.  
-	nextButton viewModel label: 'Create'.
-	nextButton	
-		whenActiveDo: [ 
-			self fireEvent: (LAUEventAnnotateNext new)
-			];
-		whenDeactivateDo: [ 
+	nextButton := LAButtonElement new.  
+	nextButton label: 'Join'.
+	nextButton  
+		when: BlClickEvent do: [
 			self fireEvent: (LAUEventAnnotateNext new)
 			].
 	
@@ -21,6 +18,8 @@ createUntanglingContinuousAnnotation
 							
 	cont addChild: (LALayoutBoxElement horizontal 
 							addChild: (LABasicLabelElement text: 'Continuous annotation') ; 
+							alignLeft;
+							width: 150;
 							yourself).
 	cont addChild: nextButton.
 	

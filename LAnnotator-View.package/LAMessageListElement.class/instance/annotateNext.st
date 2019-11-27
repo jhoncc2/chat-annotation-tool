@@ -6,7 +6,7 @@ annotateNext
 	self handlgeUntangleElement: self firstMessageSelected  
 			with: (messageElements at: messageSelectedIndex + 1).
 	
-	self anchoredMessage ifTrue: [ self firstMessageSelected onStrongSelected ].
+	self focusMessageElement.
 	
 	self focusNext.
 	
