@@ -1,0 +1,3 @@
+structure
+resetConversationCovering
+	messageRoot := nil

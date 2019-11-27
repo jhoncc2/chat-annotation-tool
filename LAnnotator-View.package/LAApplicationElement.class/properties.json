@@ -11,7 +11,8 @@
 		"listView",
 		"panelMessages",
 		"controlPanel",
-		"controller"
+		"controller",
+		"infoPanel"
 	],
 	"name" : "LAApplicationElement",
 	"type" : "normal"

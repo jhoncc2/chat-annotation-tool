@@ -13,7 +13,10 @@
 		"username",
 		"time",
 		"content",
-		"timestamp"
+		"timestamp",
+		"index",
+		"visited",
+		"messageRoot"
 	],
 	"name" : "LAJkkModel",
 	"type" : "normal"

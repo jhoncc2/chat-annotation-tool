@@ -1,0 +1,3 @@
+information
+numberOfConversations
+	^ self messageModels numberOfConversations

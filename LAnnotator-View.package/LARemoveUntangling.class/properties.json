@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "LABiMessageEvent",
+	"category" : "LAnnotator-View-Event",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "LARemoveUntangling",
+	"type" : "normal"
+}

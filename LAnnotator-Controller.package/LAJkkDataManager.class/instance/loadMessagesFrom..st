@@ -1,10 +1,12 @@
 parsing
 loadMessagesFrom: aUriString
+	| index |
 	messageModels := LAJkkMessageList new.
-	
+	index := 0.
 	aUriString asFileReference readStreamDo: [ :stream |
 	[stream atEnd ] whileFalse: [ 
-			self messageModels add: (self parseMessage: stream nextLine).
+			index := index + 1.
+			self messageModels add: (self parseMessage: stream nextLine index: index).
 		]
 	].
 

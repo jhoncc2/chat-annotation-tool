@@ -1,3 +1,3 @@
 accessing
 id
-	^ username , time
+	^ username , time , index asString

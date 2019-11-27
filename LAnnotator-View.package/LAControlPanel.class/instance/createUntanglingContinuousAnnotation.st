@@ -3,7 +3,7 @@ createUntanglingContinuousAnnotation
 	| cont nextButton |
 	nextButton := LAButtonElement new.  
 	nextButton label: 'Join'.
-	nextButton  
+	nextButton
 		when: BlClickEvent do: [
 			self fireEvent: (LAUEventAnnotateNext new)
 			].

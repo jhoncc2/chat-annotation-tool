@@ -9,6 +9,3 @@ initializeLayout
 	
 	self layout: BlLinearLayout horizontal alignCenter.
 	
-	
-	self addChild: panelMessages.
-	self addChild: controlPanel.

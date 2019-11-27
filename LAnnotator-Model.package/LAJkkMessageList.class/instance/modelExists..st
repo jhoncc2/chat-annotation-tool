@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 modelExists: aMessageModel 
 	^ self anySatisfy: [:e | e = aMessageModel].

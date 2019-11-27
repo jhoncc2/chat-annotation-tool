@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "LAnnotator-View-Event",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"streamLog",
+		"fileReference"
+	],
+	"name" : "LALogger",
+	"type" : "normal"
+}

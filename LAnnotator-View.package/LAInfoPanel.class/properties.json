@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "LAPanelElement",
+	"category" : "LAnnotator-View",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"controller"
+	],
+	"name" : "LAInfoPanel",
+	"type" : "normal"
+}

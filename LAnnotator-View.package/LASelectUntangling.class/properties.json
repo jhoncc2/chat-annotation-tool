@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "LALogEvent",
+	"category" : "LAnnotator-View-Event",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"aMessage"
+	],
+	"name" : "LASelectUntangling",
+	"type" : "normal"
+}
