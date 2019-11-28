@@ -7,6 +7,9 @@ onMessageSelected: aLAMessageElement
 			self focusNone.
 		] ifFalse: [
 			messageSelectedIndex := messageElements indexOf: aLAMessageElement.
+			self fireEvent: (LASelectUntangling new 
+									aMessage: aLAMessageElement; 
+									yourself)  
 		].
 	
 	self focusMessageElement.  

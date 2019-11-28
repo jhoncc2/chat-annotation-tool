@@ -12,7 +12,8 @@
 		"panelMessages",
 		"controlPanel",
 		"controller",
-		"infoPanel"
+		"infoPanel",
+		"eventLogger"
 	],
 	"name" : "LAApplicationElement",
 	"type" : "normal"

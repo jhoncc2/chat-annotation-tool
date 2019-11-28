@@ -1,7 +1,7 @@
 log
 logEvent: aStream
-	aStream << self class << '|'
-		<< self timestamp << '|'
+	aStream << self class asString << '|'
+		<< self timestamp asString << '|'
 		"<< self aMessage id << '|'"
-		<< self aMessage index << '|'
+		<< self aMessage index asString
 		
