@@ -1,9 +1,9 @@
 as yet unclassified
 testStoreMessagesTo
-	| inst |
-	inst := LAJsonDataManager new.
-	 
-	inst loadMessagesFrom: FileLocator imageDirectory  / 'pharo-local/iceberg/jhoncc2/chat-annotation-tool/data/la-messages-test.json'.
+	| inst readFile linkFile |
+	inst := LAJkkDataManager new.
+	readFile := 'pharo-local/iceberg/jhoncc2/chat-annotation-tool/data/jkk-data-test.txt'.
+	inst loadMessagesFrom: FileLocator imageDirectory  / readFile.
 	
 	inst messageModels first createRelationWith: inst messageModels second.
 	"assert relation"
@@ -14,12 +14,12 @@ testStoreMessagesTo
 			equals: inst messageModels first. 
 
 
-	inst storeMessagesTo: FileLocator imageDirectory  / 'pharo-local/iceberg/jhoncc2/chat-annotation-tool/data/la-messages-test-modified.json'.
-	
-	inst loadMessagesFrom: FileLocator imageDirectory  / 'pharo-local/iceberg/jhoncc2/chat-annotation-tool/data/la-messages-test-modified.json'.
-	
-	self assert: inst messageModels size equals: 5. 
-	self assert: inst messageModels first class equals: LADiscordModel.
+	linkFile := 'pharo-local/iceberg/jhoncc2/chat-annotation-tool/data/jkk-data-links.txt'.
+	inst storeLinksTo: FileLocator imageDirectory / linkFile. " save links "
+	inst loadMessagesFrom: FileLocator imageDirectory / readFile. "read messages - empty links"
+	inst loadLinksFrom: FileLocator imageDirectory / linkFile. " reload links "
+	self assert: inst messageModels size equals: 10. 
+	self assert: inst messageModels first class equals: LAJkkModel.
 	"assert relation"
 	self assert: inst messageModels first messageRelations first 
 			equals: inst messageModels second.

@@ -1,3 +1,3 @@
 information
 numberOfConversations
-	^ self messageModels numberOfConversations
+	^ self messageTrees size

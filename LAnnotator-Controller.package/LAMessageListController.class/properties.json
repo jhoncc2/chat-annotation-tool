@@ -9,7 +9,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"view",
-		"dataProvider"
+		"dataProvider",
+		"messageTrees"
 	],
 	"name" : "LAMessageListController",
 	"type" : "normal"

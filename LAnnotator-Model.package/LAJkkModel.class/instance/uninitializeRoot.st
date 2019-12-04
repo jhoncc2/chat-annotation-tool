@@ -1,0 +1,3 @@
+structure
+uninitializeRoot
+	messageRoot := nil
