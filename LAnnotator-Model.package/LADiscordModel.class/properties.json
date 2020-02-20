@@ -1,16 +1,15 @@
 {
-	"commentStamp" : "",
-	"super" : "DSMessage",
-	"category" : "LAnnotator-Model",
-	"classinstvars" : [ ],
-	"pools" : [ ],
+	"classtraitcomposition" : "LAModelTrait classTrait",
 	"classvars" : [ ],
 	"instvars" : [
-		"messageRelations",
-		"messageRelationIds",
-		"messageElement",
 		"parsedContent"
 	],
 	"name" : "LADiscordModel",
-	"type" : "normal"
+	"commentStamp" : "",
+	"super" : "DSMessage",
+	"traitcomposition" : "LAModelTrait",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "LAnnotator-Model"
 }

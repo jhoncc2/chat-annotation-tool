@@ -1,10 +1,6 @@
 event-handling
 switchAnchorStatus
 	"self firstMessageSelected  ifNil: [ ^self ]."
-	anchoredMessage ifFalse: [
-		anchoredMessage := true.
-	] ifTrue: [ 
-		anchoredMessage := false.
-	].
+	anchoredMessage := anchoredMessage not.
 	self focusMessageElement.
 	

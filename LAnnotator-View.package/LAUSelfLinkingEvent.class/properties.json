@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "LAUntagglingEvent",
+	"category" : "LAnnotator-View-Event",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "LAUSelfLinkingEvent",
+	"type" : "normal"
+}

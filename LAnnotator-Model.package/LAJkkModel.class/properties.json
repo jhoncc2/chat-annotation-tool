@@ -1,23 +1,20 @@
 {
-	"commentStamp" : "",
-	"super" : "Object",
-	"category" : "LAnnotator-Model",
-	"classinstvars" : [ ],
-	"pools" : [ ],
+	"classtraitcomposition" : "LAModelTrait classTrait",
 	"classvars" : [ ],
 	"instvars" : [
-		"messageRelations",
-		"messageRelationIds",
-		"messageElement",
-		"parsedContent",
 		"username",
 		"time",
 		"content",
 		"timestamp",
 		"index",
-		"visited",
-		"messageRoot"
+		"visited"
 	],
 	"name" : "LAJkkModel",
-	"type" : "normal"
+	"commentStamp" : "",
+	"super" : "Object",
+	"traitcomposition" : "LAModelTrait",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "LAnnotator-Model"
 }

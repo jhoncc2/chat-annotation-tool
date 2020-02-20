@@ -4,3 +4,4 @@ initializeContent
 	self createUntanglingModeControl.
 	self createUntanglingContinuousAnnotation.
 	self createUntanglingAnchorAnnotation.
+	self createSelfMessageAnnotation.

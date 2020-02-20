@@ -1,8 +1,15 @@
 anchor
-startAnchor: arg1 endAnchor: arg2
+startAnchor: aBlElement endAnchor: bBlElement
 	| tmp1 tmp2 tmp3 tmp4 |
-	tmp2 := arg1 bounds asRectangle.
-	tmp3 := arg2 bounds asRectangle.
+	
+		
+	aBlElement = bBlElement ifFalse: [
+		tmp2 := aBlElement bounds asRectangle.
+		tmp3 := bBlElement bounds asRectangle.
+	] ifTrue: [ 
+		tmp2 := bBlElement bounds asRectangle translateBy: 0@(-10).
+		tmp3 := bBlElement bounds asRectangle translateBy: 0@10.
+	].
 	
 	self isVertical
 		ifTrue: [ tmp1 := tmp2 origin x @ ((tmp2 origin y + tmp2 corner y) / 2).

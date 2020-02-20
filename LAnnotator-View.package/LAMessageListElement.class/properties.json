@@ -14,7 +14,8 @@
 		"uiIndex",
 		"isDeleteActive",
 		"messageClass",
-		"label"
+		"label",
+		"colorPicker"
 	],
 	"name" : "LAMessageListElement",
 	"type" : "normal"

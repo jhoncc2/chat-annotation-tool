@@ -1,20 +1,21 @@
 instance creation
-openOnMessageType: messageClass file: readf from: ini to: end
-	| space dataManager controller |
+openOnMessageType: dataProviderClass file: readf from: ini to: end
+	| space dataManager controller element |
 	self newInstance.
-	messageClass = LADiscordModel ifTrue: [ 
-		dataManager := LAJsonDataManager instance.
-	] ifFalse: [ 
-		dataManager := LAJkkDataManager instance.
-	].
+	dataManager := dataProviderClass instance.
 	dataManager filePath: readf; loadMessagesIfNeeded.
 	
+	dataProviderClass = LAJkkDataManager ifTrue: [ 
+		element := LAJkkElement.
+	] ifFalse: [ 
+		element := LADiscordElement.
+	].
+	
 	controller := LAMessageListController new.
-	controller view: self instance.
 	self instance controller: controller.
 	controller dataProvider: dataManager;
 				view: self instance.
-	self instance messageClass: messageClass.
+	self instance messageClass: element.
 	
 	self instance loadMessagesFrom: ini to: end.
 	

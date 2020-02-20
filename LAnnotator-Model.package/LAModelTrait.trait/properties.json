@@ -1,0 +1,12 @@
+{
+	"commentStamp" : "",
+	"classinstvars" : [ ],
+	"category" : "LAnnotator-Model",
+	"instvars" : [
+		"messageRelations",
+		"messageRelationIds",
+		"messageElement",
+		"messageRoot"
+	],
+	"name" : "LAModelTrait"
+}

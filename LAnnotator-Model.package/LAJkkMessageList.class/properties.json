@@ -1,11 +1,13 @@
 {
-	"commentStamp" : "",
-	"super" : "OrderedCollection",
-	"category" : "LAnnotator-Model",
-	"classinstvars" : [ ],
-	"pools" : [ ],
+	"classtraitcomposition" : "LAModelListTrait classTrait",
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "LAJkkMessageList",
-	"type" : "normal"
+	"commentStamp" : "",
+	"super" : "OrderedCollection",
+	"traitcomposition" : "LAModelListTrait",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "LAnnotator-Model"
 }

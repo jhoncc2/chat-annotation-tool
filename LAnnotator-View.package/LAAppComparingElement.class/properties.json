@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "",
+	"super" : "LABaseElement",
+	"category" : "LAnnotator-View-Comparing",
+	"classinstvars" : [
+		"instance",
+		"dps"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"dataProviders",
+		"listViews",
+		"controllers",
+		"messageClass"
+	],
+	"name" : "LAAppComparingElement",
+	"type" : "normal"
+}

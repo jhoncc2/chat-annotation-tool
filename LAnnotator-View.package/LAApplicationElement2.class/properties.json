@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "",
+	"super" : "LABaseElement",
+	"category" : "LAnnotator-View",
+	"classinstvars" : [
+		"instance"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"listView",
+		"panelMessages",
+		"controlPanel",
+		"controller",
+		"infoPanel",
+		"eventLogger"
+	],
+	"name" : "LAApplicationElement2",
+	"type" : "normal"
+}

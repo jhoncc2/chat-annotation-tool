@@ -10,7 +10,7 @@ connectMessageElement: aMElement with: bMElement
 	"update color group"
 	v := { aMElement. bMElement } select: #visited.
 	v isEmpty 
-		ifTrue: [ aMElement colorConnectedMessages: LAColorPicker instance nextColor ]
+		ifTrue: [ aMElement colorConnectedMessages: self colorPicker nextColor ]
 		ifFalse: [ 
 			v first resetVisitingCheck. 
 			v first colorConnectedMessages: v first groupedColor 
@@ -19,8 +19,8 @@ connectMessageElement: aMElement with: bMElement
 	"add arc"
 	arc := LAArcConnectorElement new setVertical; yourself.
 	(aMElement isBefore: bMElement) 
-		ifTrue: [ arc startAnchor: aMElement endAnchor:bMElement ]
-		ifFalse: [ arc startAnchor: bMElement endAnchor:aMElement ].
+		ifTrue: [ arc startAnchor: aMElement endAnchor: bMElement ]
+		ifFalse: [ arc startAnchor: bMElement endAnchor: aMElement ].
 	
 	aMElement elementArcs add: arc.
 	bMElement elementArcs add: arc.
