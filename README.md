@@ -1,12 +1,7 @@
 # chat-annotation-tool
 
 ## Dependencies
-```
-Metacello new
-    baseline: #DiscordSt;
-    repository: 'github://JurajKubelka/DiscordSt/src';
-    load.
-```
+
 ```
 [
     EpMonitor current disable.
@@ -16,7 +11,17 @@ Metacello new
         load
 ] ensure: [ EpMonitor current enable ]
 ```
+
+(Optional) DiscordSt library is utilized for annotating data from Discord.
+
+```
+Metacello new
+    baseline: #DiscordSt;
+    repository: 'github://JurajKubelka/DiscordSt/src';
+    load.
+```
+
+
 ## Installation
-```
-comming soon
-```
+
+Clone from github: git@github.com:jhoncc2/chat-annotation-tool.git
