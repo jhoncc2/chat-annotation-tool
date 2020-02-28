@@ -1,3 +1,3 @@
 accessing
 messageRelations
-	^ messageRelations ifNil: [ messageRelations := LADiscordMessageList empty ]
+	^ messageRelations ifNil: [ messageRelations := OrderedCollection empty ]

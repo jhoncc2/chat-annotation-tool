@@ -2,7 +2,7 @@ parsing
 parseMessage: aStringLine
 	| model parsedUsername parsedTime |
 	
-	parsedUsername := '<[^>]+>' asRegexIgnoringCase matchingRangesIn: aStringLine.
+	parsedUsername := '<\w+>' asRegexIgnoringCase matchingRangesIn: aStringLine.
 	parsedTime := '\[\d\d\:\d\d\]' asRegexIgnoringCase matchingRangesIn: aStringLine.
 	model :=  LAJkkModel new.
 	model username: (aStringLine copyFrom: parsedUsername first first to: parsedUsername first last).

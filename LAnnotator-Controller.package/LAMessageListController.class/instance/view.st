@@ -1,3 +1,3 @@
-testing
+initialization
 view
 	^ view

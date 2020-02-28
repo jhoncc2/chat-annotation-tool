@@ -1,7 +1,6 @@
 initialization
 registerUnion: aMessage
 	aMessage uninitializeRoot.
-	messageTrees := (self messageTrees collect: [ :e | 
-				e uninitializeRoot.
-				e messageRoot ]) asSet.
-	self messageTrees add: aMessage messageRoot.  
+	(self messageTrees anySatisfy: [ :e | e = aMessage messageRoot ] ) 
+		ifTrue: [ ^ self ]
+		ifFalse: [ ^ self messageTrees add: aMessage messageRoot ].

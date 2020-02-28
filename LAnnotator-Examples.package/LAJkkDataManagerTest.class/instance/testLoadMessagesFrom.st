@@ -1,9 +1,9 @@
 as yet unclassified
 testLoadMessagesFrom
 	| inst |
-	inst := LAJsonDataManager new.
-	inst loadMessagesFrom: '/Users/jhonc/Documents/Pharo/images/Pharo 7.0 - annotation-0.2/pharo-local/iceberg/jhoncc2/chat-annotation-tool/data/la-messages-test.json'.
+	inst := LAJkkDataManager new.
+	inst loadMessagesFrom: '/Users/jhonc/Workspace/[R]research/untangling/repository/jhoncc2/chat-annotation-tool/data/jkk-data-test.txt'.
 	
-	self assert: inst messageModels size equals: 5. 
-	self assert: inst messageModels first class equals: LADiscordModel.
+	self assert: inst messageModels size equals: 10. 
+	self assert: inst messageModels first class equals: LAJkkModel.
 	
