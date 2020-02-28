@@ -1,0 +1,17 @@
+[10:10]<henry> can anyone tell me how to install a new package on ubuntu 14.04?
+[10:10]<thomas> Is it necessary to create a liveUSB drive to install ubuntu?
+[10:10]<henry> you can also burn an .iso file to a cd to install
+[10:20]<Onepamopa> does anyone know HOW to auto execute a command AFTER user login (Unity) ?
+[10:30]<Onepamopa> or how to permanently disable mouse acceleration
+[10:30]<dankan> let me tell you
+[10:30]<dankan> https://wiki.archlinux.org/index.php/Mouse_acceleration see the bit "disabling mouse acceleration" ty
+--- [D] User is Engaged in Multiple Conversations
+--- No need to ensure all of a user's messages are in a single graph. 
+--- Only link <henry>'s second message to <thomas>'s message. 
+--- In the example of <Onepamopa> it is less clear, but they should probably be linked as they form one overall problem.
+--- For <dankan>'s messages, you need to either:
+--- (1) Link both of them to the last message from <Onepamopa>
+--- (2) Link both of them to both of <Onepamopa>'s messages.
+--- You should do (1) when <Onepamopa>'s messages formed a single question. Do
+--- (2) when they formed separate questions, but somehow were both answered at
+--- the same time.

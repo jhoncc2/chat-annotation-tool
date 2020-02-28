@@ -1,0 +1,16 @@
+[10:00] <OerHeks> you might want to reask in #ubuntu-server
+[10:00] <fels> Thanks -
+[10:00] <fels> are they brutal to newbies :)
+[10:11] <zxc_> I'm thinking of just locating it and then using MPV to open it
+[10:11] <nacc> not sure i follow -- of course you have to know where the file is
+[10:11] <nacc> oh you mean you want to do `locate ... | mpv` ?
+[10:22] <tgm4883> If you know you aren't supposed to come here, then why did you?
+[10:22] <ThePotato> because the other chat is broked
+[10:22] <ThePotato> for the distro
+--- [C] User Responds to Messsage Multiple Times.
+--- There are two extremes here:
+--- (1) Each message could stand alone as a response (e.g. <fels>)
+--- (2) The messages form one thought (e.g. <ThePotato>)
+--- In (1), link both messages from <fels> directly to the message from
+<OerHeks>. 
+--- In (2), link the second message from <ThePotato> to the first message from <ThePotato>. The case with <nacc> is closer to (1), but is less clear.

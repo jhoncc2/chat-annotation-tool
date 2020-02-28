@@ -1,0 +1,7 @@
+[10:10] <karen_> hi, guys, I just got lubuntu 16.04, don't know it well, but I don't see anywhere to download "Skype". I looked in synaptic package and Lubuntu Software. What should I do?
+[10:10] <OerHeks> !skype
+[10:10] <ubottu> To install Skype on Ubuntu, see https://help.ubuntu.com/community/Skype - To record on Skype, check: https://wiki.ubuntu.com/SkypeRecordingHowto - Please use open protocols instead if you can, see !Ekiga
+[10:10] <karen_> I see, I'll try that.
+--- [F] Use of ubottu, an IRC bot:
+--- Link ubottu's response to both the person who called it (<OerHeks>) and the person the information is directed at (<karen_>). 
+--- If someone then says something that is essentially a response to the bot, link the message to the bot's message.

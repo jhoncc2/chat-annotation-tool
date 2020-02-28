@@ -1,0 +1,4 @@
+[10:10] <ctf2> ddd
+[10:10] <ctf2> adasdaasddas
+--- [E] Interjections / Noise
+--- Treat each as a separate interjection - do not link to anything.
