@@ -4,20 +4,12 @@ parseMessage: aStringLine index: anIndex
 	(aStringLine beginsWith: '===') ifTrue: [ 
 		^ model := LAJkkModel new 
 						index: anIndex; 
-						username: '=Announce=';
-						time: '00:00';
+						username: '<Announce>';
+						time: '[00:00]';
 						content: aStringLine;
 						yourself.   ].
-					
-	(aStringLine beginsWith: '---') ifTrue: [ 
-		^ model := LAJkkModel new 
-						index: anIndex; 
-						username: '=Note=';
-						time: '00:00';
-						content: (aStringLine allButFirst: 3);
-						yourself.   ].
 	
-	parsedUsername := '<.+>' asRegexIgnoringCase matchingRangesIn: aStringLine.
+	parsedUsername := '<[^>]+>' asRegexIgnoringCase matchingRangesIn: aStringLine.
 	parsedTime := '\[\d\d\:\d\d\]' asRegexIgnoringCase matchingRangesIn: aStringLine.
 	model :=  LAJkkModel new.
 	parsedUsername isEmpty 

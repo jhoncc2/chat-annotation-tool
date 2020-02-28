@@ -1,0 +1,16 @@
+{
+	"classtraitcomposition" : "LAModelListTrait classTrait",
+	"classvars" : [ ],
+	"instvars" : [
+		"relations",
+		"text"
+	],
+	"name" : "LADiscordMessageList",
+	"commentStamp" : "",
+	"super" : "DSMessages",
+	"traitcomposition" : "LAModelListTrait",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "LAnnotator-Model"
+}

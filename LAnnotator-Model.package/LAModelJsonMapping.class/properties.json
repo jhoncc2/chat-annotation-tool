@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "DSModelJsonMapping",
+	"category" : "LAnnotator-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "LAModelJsonMapping",
+	"type" : "normal"
+}
