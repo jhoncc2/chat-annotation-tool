@@ -1,3 +1,3 @@
 accessing
 parsedContent
-	^ content
+	^ content copyReplaceAll: '\n' with: String cr
