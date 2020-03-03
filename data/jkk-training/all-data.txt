@@ -1,0 +1,47 @@
+[12:18] <kkathman> night ladies and gents :)
+[12:18] <Liberal_Tugboat> well night all!
+[12:18] <samatman_> night
+[03:53] <chmod775> is there any VPN software for ubuntu ?
+[03:53] <jind> love your nick
+--- [A] Social messages.\n In the first case, <samatman_>'s comment would be linked to the previous two, but <jind>'s comment would not be linked to <chmod775>'s.\n The reasoning is that side comments like these are not part of the technical conversation, but rather form their own, separate conversation.
+[03:53] <Bashing-om> Maube a fault in your mirror ? Maybe wait a spell and see if the mirror syncs up with mother .. or change your mirror ?
+[03:53] <lordcirth> Yes, the next thing to try would be switching mirrors
+[03:53] <ShinyShoes> this could be the mirror problem, you're right
+--- [B] Message Responds to Multiple Previous Messages.\n Link <ShinyShoes> message to both of the previous messages.
+[10:00] <OerHeks> you might want to reask in #ubuntu-server
+[10:00] <fels> Thanks -
+[10:00] <fels> are they brutal to newbies :)
+[10:11] <zxc_> I'm thinking of just locating it and then using MPV to open it
+[10:11] <nacc> not sure i follow -- of course you have to know where the file is
+[10:11] <nacc> oh you mean you want to do `locate ... | mpv` ?
+[10:22] <tgm4883> If you know you aren't supposed to come here, then why did you?
+[10:22] <ThePotato> because the other chat is broked
+[10:22] <ThePotato> for the distro
+--- [C] User Responds to Messsage Multiple Times.\n There are two extremes here:\n (1) Each message could stand alone as a response (e.g. <fels>)\n (2) The messages form one thought (e.g. <ThePotato>)\n In (1), link both messages from <fels> directly to the message from <OerHeks>. \n In (2), link the second message from <ThePotato> to the first message from <ThePotato>. The case with <nacc> is closer to (1), but is less clear.
+[10:10]<henry> can anyone tell me how to install a new package on ubuntu 14.04?
+[10:10]<thomas> Is it necessary to create a liveUSB drive to install ubuntu?
+[10:10]<henry> you can also burn an .iso file to a cd to install
+[10:20]<Onepamopa> does anyone know HOW to auto execute a command AFTER user login (Unity) ?
+[10:30]<Onepamopa> or how to permanently disable mouse acceleration
+[10:30]<dankan> let me tell you
+[10:30]<dankan> https://wiki.archlinux.org/index.php/Mouse_acceleration see the bit "disabling mouse acceleration" ty
+--- [D] User is Engaged in Multiple Conversations\n No need to ensure all of a user's messages are in a single graph. \n Only link <henry>'s second message to <thomas>'s message. \n In the example of <Onepamopa> it is less clear, but they should probably be linked as they form one overall problem.\n For <dankan>'s messages, you need to either:\n (1) Link both of them to the last message from <Onepamopa>\n (2) Link both of them to both of <Onepamopa>'s messages.\n You should do (1) when <Onepamopa>'s messages formed a single question. \n Do (2) when they formed separate questions, but somehow were both answered at the same time.
+[10:10] <ctf2> ddd
+[10:10] <ctf2> adasdaasddas
+--- [E] Interjections / Noise \n Treat each as a separate interjection - do not link to anything.
+[10:10] <karen_> hi, guys, I just got lubuntu 16.04, don't know it well, but I don't see anywhere to download "Skype". I looked in synaptic package and Lubuntu Software. What should I do?
+[10:10] <OerHeks> !skype
+[10:10] <ubottu> To install Skype on Ubuntu, see https://help.ubuntu.com/community/Skype - To record on Skype, check: https://wiki.ubuntu.com/SkypeRecordingHowto - Please use open protocols instead if you can, see !Ekiga
+[10:10] <karen_> I see, I'll try that.
+--- [F] Use of ubottu, an IRC bot:\n Link ubottu's response to both the person who called it (<OerHeks>) and the person the information is directed at (<karen_>). \n If someone then says something that is essentially a response to the bot, link the message to the bot's message.
+[10:10] <discord> i get the msg
+[10:10] <discord> mplayer-k6:
+[10:10] <discord> Depends: libartsc0 but it is not going to be installed
+[10:10] <discord> Depends: libfribidi0 but 0.10.4-3 is to be installed
+[10:10] <discord> Depends: libggi2 but it is not going to be installed
+[10:10] <discord> Depends: libpng12-0 but 1.2.5.0-7ubuntu1 is to be installed
+[10:10] <discord> Depends: libungif4g but 4.1.0b1-6 is to be installed
+[10:10] <discord> What's wrong?
+[10:10] <henry> You need to install some libraries
+[10:10] <henry> Get libggi2 from http://...
+--- [G] Handling a series of lines of output:\n  Here, link:\n     "mplayer-k6:"      to "i get the msg"\n     "Depends: ..."     to both the line one previous, and "i get the msg"\n     "What's wrong?"    to "mplayer-k6"\n     <henry>'s 1st msg  to "What's wrong?"\n     <henry>'s 2nd msg  to the "Depends: libggi" message\n  The intuition is that messages in the sequence are all linked together in a chain, and also linked to the message the chunk is a response to. \n  Follow-up messages (including from the same user) are linked to the message that is most semantically relevant, or the top of the chunk if they are generally a response to the whole chunk.
