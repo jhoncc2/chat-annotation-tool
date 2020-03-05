@@ -2,14 +2,14 @@ initialization
 createUntanglingAnchorAnnotation
 	| cont |
 	anchorButton := LASwitchButtonElement new.  
-	anchorButton viewModel label: 'Anchor'.
+	anchorButton label: 'Anchor'.
 	anchorButton	
 		whenActiveDo: [ 
-			anchorButton  viewModel label: 'Anchor'.
+			anchorButton  label: 'Anchor'.
 			self fireEvent: (LAUEventSwitchAnchor new)
 			];
 		whenDeactivateDo: [ 
-			anchorButton viewModel label: 'Unanchor'.
+			anchorButton label: 'Unanchor'.
 			self fireEvent: (LAUEventSwitchAnchor new)
 			].
 	cont := LALayoutBoxElement horizontal

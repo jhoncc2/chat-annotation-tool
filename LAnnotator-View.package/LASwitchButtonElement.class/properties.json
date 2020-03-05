@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "BlElement",
+	"super" : "BrToggle",
 	"category" : "LAnnotator-View-widgets",
 	"classinstvars" : [ ],
 	"pools" : [ ],
