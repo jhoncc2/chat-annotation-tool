@@ -6,7 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"controller",
 		"tagged"
 	],
 	"name" : "LAInfoPanel",

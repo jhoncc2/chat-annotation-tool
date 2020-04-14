@@ -2,6 +2,6 @@ initialize
 initializeMessageContent
 	| messageText |
 	
-	messageText := LAParagraphElement new text: self messageModel parsedContent.
+	messageText := (self newPharagraphElement) text: self messageModel parsedContent.
 
 	self addChild: messageText 

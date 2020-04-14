@@ -1,3 +1,0 @@
-initialization
-newMessageModel
-	^ LADiscordModel new

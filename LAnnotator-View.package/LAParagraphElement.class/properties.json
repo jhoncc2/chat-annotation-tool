@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"textElement"
+		"textElement",
+		"selected"
 	],
 	"name" : "LAParagraphElement",
 	"type" : "normal"

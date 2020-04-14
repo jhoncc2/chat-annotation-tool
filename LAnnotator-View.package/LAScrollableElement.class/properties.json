@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "BlScrollableElement",
+	"category" : "LAnnotator-View-widgets",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "LAScrollableElement",
+	"type" : "normal"
+}

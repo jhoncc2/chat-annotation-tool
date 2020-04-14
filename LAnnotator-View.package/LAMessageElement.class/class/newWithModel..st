@@ -1,3 +1,5 @@
 instance creation
 newWithModel: aLAMessageModel
-	^ self basicNew messageModel: aLAMessageModel; initialize; yourself
+	^ self basicNew messageModel: aLAMessageModel; 
+		initialize; 
+		yourself

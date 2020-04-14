@@ -5,7 +5,10 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"controller",
+		"app"
+	],
 	"name" : "LABaseElement",
 	"type" : "normal"
 }

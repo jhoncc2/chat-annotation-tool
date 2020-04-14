@@ -1,3 +1,0 @@
-initialization
-onMessagesLoaded
-	infoPanel initializeInformation.

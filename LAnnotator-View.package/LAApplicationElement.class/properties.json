@@ -11,9 +11,9 @@
 		"listView",
 		"panelMessages",
 		"controlPanel",
-		"controller",
 		"infoPanel",
-		"eventLogger"
+		"eventLogger",
+		"announcer"
 	],
 	"name" : "LAApplicationElement",
 	"type" : "normal"

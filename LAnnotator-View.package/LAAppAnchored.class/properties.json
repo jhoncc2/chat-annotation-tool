@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "LAApplicationElement",
+	"category" : "LAnnotator-View",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "LAAppAnchored",
+	"type" : "normal"
+}

@@ -2,7 +2,7 @@ initialize
 initializeMessageContent
 	| messageText |
 	
-	messageText := LAParagraphElement new 
+	messageText := self newPharagraphElement 
 		text: self messageModel parsedContent;
 		background: (Color gray alpha: 0.1);
 		yourself. 
