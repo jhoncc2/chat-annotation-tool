@@ -5,12 +5,12 @@ openOnMessageType: dataProviderClass file: readf from: ini to: end
 	dataManager := dataProviderClass instance.
 	dataManager filePath: readf; loadMessagesIfNeeded.
 	
+	"TODO: modify element defined here"
 	dataProviderClass = LAJkkDataManager ifTrue: [ 
-		element := LAJkkElement.
+		element := LAJkkElementVis.
 	] ifFalse: [ 
 		element := LADiscordElement.
 	].
-	
 	controller := LAMessageListController new.
 	self instance controller: controller.
 	controller dataProvider: dataManager;

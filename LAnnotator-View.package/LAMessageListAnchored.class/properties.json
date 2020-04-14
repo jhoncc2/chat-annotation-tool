@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "LAApplicationElement",
+	"super" : "LAMessageListElement",
 	"category" : "LAnnotator-View",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "LAAppAnchored",
+	"name" : "LAMessageListAnchored",
 	"type" : "normal"
 }

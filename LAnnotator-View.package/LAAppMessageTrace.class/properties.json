@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "LAApplicationElement",
+	"category" : "LAnnotator-View",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"messageTrace"
+	],
+	"name" : "LAAppMessageTrace",
+	"type" : "normal"
+}

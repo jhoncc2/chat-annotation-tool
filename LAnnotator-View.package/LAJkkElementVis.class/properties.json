@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "LAJkkElement",
+	"category" : "LAnnotator-View",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"textSimilarity",
+		"timeSimilarity",
+		"commSimilarity"
+	],
+	"name" : "LAJkkElementVis",
+	"type" : "normal"
+}

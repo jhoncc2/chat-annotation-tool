@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "LARectangleElement",
+	"category" : "LAnnotator-View",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"absoluteSize"
+	],
+	"name" : "LABar",
+	"type" : "normal"
+}

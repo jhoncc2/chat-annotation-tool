@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "GlamorousAuthor 4/14/2020 09:14",
+	"super" : "LABoxWidgetElement",
+	"category" : "LAnnotator-View",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"textElement"
+	],
+	"name" : "LASimilarityBar",
+	"type" : "normal"
+}
