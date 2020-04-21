@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "BaselineOf",
+	"category" : "BaselineOfLAnnotator",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"PostLoaded"
+	],
+	"instvars" : [ ],
+	"name" : "BaselineOfLAnnotator",
+	"type" : "normal"
+}
