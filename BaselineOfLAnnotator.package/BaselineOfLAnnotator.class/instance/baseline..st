@@ -4,7 +4,7 @@ baseline: spec
 	spec for: #'common' do: [
 		spec 
 			baseline: 'Bloc' with: [
-				spec repository: 'github://feenkcom/Bloc/src' ];
+				spec repository: 'github://pharo-graphics/Bloc/src' ];
 			baseline: 'Brick' with: [
 				spec repository: 'github://pharo-graphics/Brick/src' ];
 			baseline: 'NeoJSON' with: [
