@@ -11,13 +11,13 @@ baseline: spec
 				spec repository: 'github://svenvc/NeoJSON/repository' ].
 		spec 
 			package: #'LAnnotator-View' with: [
-				spec requires: #('Bloc' 'Brick' 'LAnnotator-Controller' 'LAnnotator-Announcements' ). ];
-			package: #'LAnnotator-Controller' with: [
-				spec spec requires: #('Bloc' 'LAnnotation-Model' 'LAnnotation-View' 'NeoJSON') ];
+				spec requires: #('Bloc' 'Brick' 'LAnnotator-Announcements' ). ];
 			package: #'LAnnotator-Model' with: [
-				spec requires: #( 'LAnnotation-View' ). ];
+				spec requires: #(). ];
+			package: #'LAnnotator-Controller' with: [
+				spec requires: #('Bloc' 'LAnnotator-Model' 'LAnnotator-View' 'NeoJSON') ];
 			package: #'LAnnotator-Announcements' with: [
 				spec requires: #( ). ];
 			package: #'LAnnotator-Examples' with: [
-				spec requires: #('Bloc' 'Brick' 'LAnnotator-Controller' 'LAnnotation-Model' 'LAnnotation-View' ). ].
+				spec requires: #('Bloc' 'Brick' 'LAnnotator-Controller' 'LAnnotator-Model' 'LAnnotator-View' ). ].
 	]
