@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 nextColor
 	^ self colorList at: self iterateNext

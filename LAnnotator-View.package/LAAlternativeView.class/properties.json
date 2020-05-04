@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
 	"super" : "LAApplicationElement",
-	"category" : "LAnnotator-View",
+	"category" : "LAnnotator-View-Application",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "LAApplicationElement3",
+	"name" : "LAAlternativeView",
 	"type" : "normal"
 }

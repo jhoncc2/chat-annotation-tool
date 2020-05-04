@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "LABasicLabelElement",
-	"category" : "LAnnotator-View",
+	"category" : "LAnnotator-View-widgets",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

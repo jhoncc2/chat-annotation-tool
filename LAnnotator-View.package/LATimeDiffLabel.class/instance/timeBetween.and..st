@@ -1,4 +1,4 @@
-as yet unclassified
+actions
 timeBetween: aTimestamp and: bTimestamp
 	| font diff |
 	diff := bTimestamp asSeconds - aTimestamp asSeconds.

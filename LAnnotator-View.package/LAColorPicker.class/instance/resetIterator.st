@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 resetIterator
 	iterator := 0.
 	colorList := nil.

@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "LAnnotator-View-widgets",
+	"category" : "LAnnotator-View-Utils",
 	"classinstvars" : [
 		"iterator",
 		"colorList",

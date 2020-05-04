@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "LAApplicationElement",
-	"category" : "LAnnotator-View",
+	"category" : "LAnnotator-View-Application",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "LABaseElement",
-	"category" : "LAnnotator-View",
+	"category" : "LAnnotator-View-Application",
 	"classinstvars" : [
 		"instance"
 	],

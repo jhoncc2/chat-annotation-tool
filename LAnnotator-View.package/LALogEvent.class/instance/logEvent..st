@@ -1,3 +1,3 @@
-as yet unclassified
+log
 logEvent: aStream
 	self subclassResponsibility
