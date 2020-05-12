@@ -1,4 +1,4 @@
-as yet unclassified
+actions
 prettyPrintDiff: intAsSeconds
 	| d |
 	"intAsSeconds = 0 ifTrue: [ ^ String empty ]."

@@ -1,7 +1,6 @@
 initialization
 initializeLayout
 	super initializeLayout.
-	self constraintsDo: [ :c | 
-			self halt.
+	self constraintsDo: [ :c |
 			c horizontal exact: 20.
 			c vertical matchParent ]

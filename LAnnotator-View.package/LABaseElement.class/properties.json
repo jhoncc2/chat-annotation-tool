@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "BlElement",
-	"category" : "LAnnotator-View",
+	"category" : "LAnnotator-View-BaseElement",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

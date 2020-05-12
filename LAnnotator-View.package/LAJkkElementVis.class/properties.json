@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "LAJkkElement",
-	"category" : "LAnnotator-View",
+	"category" : "LAnnotator-View-Message",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

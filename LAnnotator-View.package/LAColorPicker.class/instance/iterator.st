@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 iterator
 	^ iterator ifNil: [ self resetIterator  ].

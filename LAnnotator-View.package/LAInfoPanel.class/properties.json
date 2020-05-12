@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "LAPanelElement",
-	"category" : "LAnnotator-View",
+	"category" : "LAnnotator-View-Panel",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "LAMessageListElement",
-	"category" : "LAnnotator-View",
+	"category" : "LAnnotator-View-MessageList",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
