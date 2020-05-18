@@ -67,3 +67,44 @@ LAAppComparingElement openOnFiles: data_files providerClass: LAJkkDataManager fr
 LAAppComparingElement instance loadLinksFrom: annotation_files
 
 ```
+
+### training 
+```
+file := './pharo-local/iceberg/jhoncc2/chat-annotation-tool/data/jkk-training/all-data.txt'.
+
+logfile := './all-data.log.txt'.
+
+LAJkkDataManager instance filePath: file; loadMessages.
+LAAlternativeView openOnMessageType: LAJkkDataManager file: file from: 80 to: 200.
+
+logger := LALogger new path: logfile; yourself.
+LAAlternativeView instance eventLogger: logger.
+
+```
+
+```
+linkFile := './pharo-local/iceberg/jhoncc2/chat-annotation-tool/data/jkk-training/all-links.txt'.
+LAAlternativeView instance loadLinksFrom: linkFile.
+```
+
+### PILOT 
+```
+file := './pharo-local/iceberg/jhoncc2/chat-annotation-tool/data/pilot/2015-01-20_04.ascii.txt'.
+
+logfile := './2015-01-20_04.ascii.log.txt'.
+
+LAJkkDataManager instance filePath: file; loadMessages.
+LAAlternativeView openOnMessageType: LAJkkDataManager file: file from: 80 to: 200.
+
+logger := LALogger new path: logfile; yourself.
+LAAlternativeView instance eventLogger: logger.
+
+```
+
+```
+
+linkFile := './pharo-local/iceberg/jhoncc2/chat-annotation-tool/data/pilot/2015-01-20_04.annotation.jonathan.txt'.
+LAAlternativeView instance loadLinksFrom: linkFile.
+
+```
+
