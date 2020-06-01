@@ -5,4 +5,4 @@ awakenScrollBars
 	Return true if the animation is played, false otherwise"
 	<return: #Boolean>
 
-	^ true
+	^ false

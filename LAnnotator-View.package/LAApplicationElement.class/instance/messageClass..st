@@ -1,3 +1,3 @@
-initialization
+accessing
 messageClass: aLAMessaceElementClass
 	listView messageClass: aLAMessaceElementClass

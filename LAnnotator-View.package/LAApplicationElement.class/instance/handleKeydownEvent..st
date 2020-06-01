@@ -1,4 +1,4 @@
-initialization
+logging
 handleKeydownEvent: anEvent
 	(anEvent key name = #ShiftLeft or: (anEvent key name = #ShiftLeft))
 			ifTrue: [ 

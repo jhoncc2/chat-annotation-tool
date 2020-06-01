@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "BlInfiniteHolder",
+	"category" : "LAnnotator-View-Infinite",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"messageModel"
+	],
+	"name" : "LAInfiniteMessageHolder",
+	"type" : "normal"
+}

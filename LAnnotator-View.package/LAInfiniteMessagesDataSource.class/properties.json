@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "BlInfiniteDataSource",
+	"category" : "LAnnotator-View-Infinite",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"messageModels",
+		"loader"
+	],
+	"name" : "LAInfiniteMessagesDataSource",
+	"type" : "normal"
+}

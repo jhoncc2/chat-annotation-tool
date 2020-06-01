@@ -6,9 +6,9 @@ openOnMessageType: dataProviderClass file: readf from: ini to: end
 	dataManager filePath: readf; loadMessagesIfNeeded.
 	
 	dataProviderClass = LAJkkDataManager ifTrue: [ 
-		element := LAJkkElement.
+		element := LAJkkMessageElement.
 	] ifFalse: [ 
-		element := LADiscordElement.
+		element := LADiscordMessageElement.
 	].
 	
 	controller := LAMessageListController new.

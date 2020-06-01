@@ -1,0 +1,3 @@
+loading
+onAddedToParent
+	super onAddedToParent

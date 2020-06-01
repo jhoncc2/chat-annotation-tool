@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "LAUntagglingEvent",
+	"super" : "LAUIEvent",
 	"category" : "LAnnotator-View-Event",
 	"classinstvars" : [ ],
 	"pools" : [ ],

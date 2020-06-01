@@ -1,4 +1,5 @@
 initialization
 app: application
-	super app: application.
+	"@deprecated todo"
+	self listApp: application.
 	self initializeAnnouncements.

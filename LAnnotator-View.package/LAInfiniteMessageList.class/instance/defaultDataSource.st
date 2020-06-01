@@ -1,0 +1,3 @@
+initialization
+defaultDataSource
+	^ LAInfiniteMessagesDataSource new

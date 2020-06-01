@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "LALogEvent",
+	"super" : "LAAppLogEvent",
 	"category" : "LAnnotator-View-Event",
 	"classinstvars" : [ ],
 	"pools" : [ ],

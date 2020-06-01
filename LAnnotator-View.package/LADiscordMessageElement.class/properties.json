@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "LAMessageElement",
+	"category" : "LAnnotator-View-Message",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "LADiscordMessageElement",
+	"type" : "normal"
+}

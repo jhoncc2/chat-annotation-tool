@@ -4,9 +4,9 @@ openOnDataProviders: dataManagers from: ini to: end
 	self newInstance.
 	
 	dataManagers first class = LAJkkDataManager ifTrue: [ 
-		element := LAJkkElement.
+		element := LAJkkMessageElement.
 	] ifFalse: [ 
-		element := LADiscordElement.
+		element := LADiscordMessageElement.
 	].
 
 	self instance dataProviders: dataManagers.

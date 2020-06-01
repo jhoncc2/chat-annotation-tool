@@ -8,7 +8,7 @@ exampleMessagesWithText
 		dataProvider: (LAMockProvider instance loadMessages; yourself);
 		view: LAMessageListController newView.
 	
-	tmp3 view messageClass: LADiscordElement.
+	tmp3 view messageClass: LADiscordMessageElement.
 	
 		
 	tmp3 loadMessagesFrom: 0 to: 5.

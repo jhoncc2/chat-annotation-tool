@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Announcement",
+	"category" : "LAnnotator-Announcements",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"blClickEvent"
+	],
+	"name" : "LAAnnUIClick",
+	"type" : "normal"
+}

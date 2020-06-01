@@ -1,0 +1,5 @@
+initialization
+onAddedToSceneGraph
+	super onAddedToSceneGraph.
+
+	dataSource requestMessageModels

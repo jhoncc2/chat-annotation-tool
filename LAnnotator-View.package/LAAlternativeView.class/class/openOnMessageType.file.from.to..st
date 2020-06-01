@@ -5,7 +5,7 @@ openOnMessageType: dataProviderClass file: readf from: ini to: end
 	dataManager := dataProviderClass instance.
 	dataManager filePath: readf; loadMessagesIfNeeded.
 	
-	dataProviderClass = LAJkkDataManager element.
+	element := LAJkkDataManager element.
 	
 	controller := LAMessageListController new.
 	self instance controller: controller.
@@ -16,6 +16,6 @@ openOnMessageType: dataProviderClass file: readf from: ini to: end
 	self instance loadMessagesFrom: ini to: end.
 	
 	space := BlSpace new.
-	space extent: 700@600.
+	space extent: 700@800.
 	space root addChild: self instance.
 	space show

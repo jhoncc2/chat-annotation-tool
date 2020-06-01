@@ -9,7 +9,7 @@ openOnFile: readf from: ini to: end
 	self instance controller: controller.
 	controller dataProvider: dataManager;
 				view: self instance.
-	self instance messageClass: LADiscordElement.
+	self instance messageClass: LADiscordMessageElement.
 	
 	[space := BlSpace new.
 	space extent: 1000@600.

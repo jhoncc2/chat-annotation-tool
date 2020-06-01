@@ -1,3 +1,3 @@
-initialization
+logging
 eventLogger
 	^ eventLogger

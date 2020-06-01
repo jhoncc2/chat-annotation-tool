@@ -9,7 +9,7 @@ openJkkNotes: messagesfile links: linksFile
 	self instance controller: controller.
 	controller dataProvider: dataManager;
 				view: self instance.
-	self instance messageClass: LAJkkElement.
+	self instance messageClass: LAJkkMessageElement.
 	
 	self instance loadMessagesFrom: 0 to: 100.
 	

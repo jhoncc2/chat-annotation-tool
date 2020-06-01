@@ -14,7 +14,8 @@
 		"isDeleteActive",
 		"messageClass",
 		"label",
-		"colorPicker"
+		"colorPicker",
+		"listApp"
 	],
 	"name" : "LAMessageListElement",
 	"type" : "normal"

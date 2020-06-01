@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Announcement",
+	"category" : "LAnnotator-Announcements",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"blClickEvent",
+		"scrollElement",
+		"scrollEvent"
+	],
+	"name" : "LAAnnScroll",
+	"type" : "normal"
+}

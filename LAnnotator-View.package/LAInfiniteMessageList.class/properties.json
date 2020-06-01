@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "LAInterfaceEvent",
-	"category" : "LAnnotator-View-Event",
+	"super" : "BlInfiniteElement",
+	"category" : "LAnnotator-View-Infinite",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "LAUntagglingEvent",
+	"name" : "LAInfiniteMessageList",
 	"type" : "normal"
 }

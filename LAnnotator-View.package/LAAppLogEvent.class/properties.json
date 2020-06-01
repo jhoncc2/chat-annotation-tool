@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "LALogEvent",
+	"name" : "LAAppLogEvent",
 	"type" : "normal"
 }

@@ -1,4 +1,4 @@
-initialization
+accessing
 controller: aLAcontroller
 	controller := aLAcontroller.
 	listView controller: aLAcontroller.

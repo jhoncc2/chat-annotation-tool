@@ -1,0 +1,3 @@
+initialization
+itemCount
+	^ messageModels size
