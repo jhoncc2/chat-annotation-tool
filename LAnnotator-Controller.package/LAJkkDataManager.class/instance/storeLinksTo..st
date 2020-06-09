@@ -4,7 +4,7 @@ storeLinksTo: aUriString
 	edges := OrderedCollection new. 
 	self messageModels doWithIndex: [:e :i |
 		(e isLinkedTo: e) 	
-			ifTrue: [ edges add: (i -> i) ].
+			ifTrue: [ edges add: ((i-1) -> (i-1)) ].
 		e messageRelations do: [ :rel |
 			|eind|
 			eind := self messageModels indexOf: rel.
