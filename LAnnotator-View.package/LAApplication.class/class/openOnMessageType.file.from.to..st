@@ -1,15 +1,13 @@
 instance creation
 openOnMessageType: dataProviderClass file: readf from: ini to: end
 	| space dataManager controller element |
+	
 	self newInstance.
+	
 	dataManager := dataProviderClass instance.
 	dataManager filePath: readf; loadMessagesIfNeeded.
 	
-	dataProviderClass = LAJkkDataManager ifTrue: [ 
-		element := LAJkkMessageElement.
-	] ifFalse: [ 
-		element := LADiscordMessageElement.
-	].
+	element := dataProviderClass element.
 	
 	controller := LAMessageListController new.
 	self instance controller: controller.
@@ -20,6 +18,6 @@ openOnMessageType: dataProviderClass file: readf from: ini to: end
 	self instance loadMessagesFrom: ini to: end.
 	
 	space := BlSpace new.
-	space extent: 1000@600.
+	space extent: 1000@800.
 	space root addChild: self instance.
 	space show

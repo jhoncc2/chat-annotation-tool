@@ -5,7 +5,8 @@ createUntanglingContinuousAnnotation
 	nextButton label: 'Join'.
 	nextButton
 		when: BlClickEvent do: [
-			self fireEvent: (LAUEventAnnotateNext new)
+			"self fireEvent: (LAUEventAnnotateNext new)"
+			self announceAction: LAAnnLinkAndFocusNext new
 			].
 	
 	cont := LALayoutBoxElement horizontal

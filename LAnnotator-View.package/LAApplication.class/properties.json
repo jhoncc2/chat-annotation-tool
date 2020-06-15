@@ -3,7 +3,8 @@
 	"super" : "LABaseElement",
 	"category" : "LAnnotator-View-Application",
 	"classinstvars" : [
-		"instance"
+		"instance",
+		"appInstance"
 	],
 	"pools" : [ ],
 	"classvars" : [ ],
@@ -14,8 +15,10 @@
 		"controlPanel",
 		"infoPanel",
 		"eventLogger",
-		"announcer"
+		"announcer",
+		"isAnchorActive",
+		"isLinkingActive"
 	],
-	"name" : "LAApplicationElement",
+	"name" : "LAApplication",
 	"type" : "normal"
 }

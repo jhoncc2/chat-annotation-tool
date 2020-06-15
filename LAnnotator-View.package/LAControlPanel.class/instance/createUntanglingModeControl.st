@@ -3,14 +3,21 @@ createUntanglingModeControl
 	| cont |
 	untanglingModeButton := LASwitchButtonElement new.  
 	untanglingModeButton label: 'Create'.
+	
+	untanglingModeButton when: BlClickEvent do: [ :e |
+		anchorButton active 
+			ifTrue:  [ self announceAction: LAAnnEnableLinking new. ]
+			ifFalse: [ self announceAction: LAAnnEnableUnlinking new. ]
+	].
+	
 	untanglingModeButton	
 		whenActiveDo: [ 
 			untanglingModeButton label: 'Create'.
-			self fireEvent: (LAUEventSwitchMode new createMode; yourself)
+			"self fireEvent: (LAUEventSwitchMode new createMode; yourself)"
 			];
 		whenDeactivateDo: [ 
 			untanglingModeButton label: 'Remove'.
-			self fireEvent: (LAUEventSwitchMode new deleteMode; yourself)
+			"self fireEvent: (LAUEventSwitchMode new deleteMode; yourself)"
 			].
 	
 	cont := LALayoutBoxElement horizontal

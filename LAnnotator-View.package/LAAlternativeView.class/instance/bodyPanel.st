@@ -3,7 +3,6 @@ bodyPanel
 	listView := LAMessageListElement new.
 	listView padding: (BlInsets all: 3).
 	scrollListView := listView asScrollableElement.
-	listView app: self.
 	
 	"messagelist"
 	panelMessages := LAPanelElement new.

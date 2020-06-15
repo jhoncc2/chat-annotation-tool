@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "LAApplicationElement",
+	"super" : "LAApplication",
 	"category" : "LAnnotator-View-Application",
 	"classinstvars" : [ ],
 	"pools" : [ ],

@@ -1,6 +1,7 @@
 accessing
 isBefore: aMessageModel
-	self timestamp = aMessageModel timestamp ifTrue: [ 
+	"self timestamp = aMessageModel timestamp ifTrue: [ 
 		^ self index < aMessageModel index. 
 		].
-	^ self timestamp < aMessageModel timestamp.
+	^ self timestamp < aMessageModel timestamp."
+	^ self index < aMessageModel index

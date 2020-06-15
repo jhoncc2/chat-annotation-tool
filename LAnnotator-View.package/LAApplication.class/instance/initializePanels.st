@@ -3,7 +3,7 @@ initializePanels
 	| infoPanelCont |
 	listView := LAMessageListElement new.
 	listView padding: (BlInsets all: 5).
-	listView app: self.
+	"listView app: self."
 	
 	panelMessages := LAPanelElement new.
 	infoPanelCont := LAPanelElement new 

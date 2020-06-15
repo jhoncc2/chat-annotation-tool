@@ -1,0 +1,3 @@
+logging
+isAnchorActive
+	^ isAnchorActive

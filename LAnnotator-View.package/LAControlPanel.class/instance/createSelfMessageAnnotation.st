@@ -5,7 +5,9 @@ createSelfMessageAnnotation
 	nextButton label: 'self-link'.
 	nextButton
 		when: BlClickEvent do: [
-			self fireEvent: (LAUSelfLinkingEvent new)
+			"self fireEvent: (LAUSelfLinkingEvent new)"
+			
+			self announceAction: LAAnnSelfLink new
 			].
 	
 	cont := LALayoutBoxElement horizontal

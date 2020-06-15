@@ -2,11 +2,9 @@ panels
 bodyPanel
 	listView := LAMessageListElement new.
 	listView padding: (BlInsets all: 3).
-	listView app: self.
 	
 	listViewB := LAMessageListElement new.
 	listViewB padding: (BlInsets all: 3).
-	listViewB app: self.
 	
 	"messagelist"
 	panelMessages := LAPanelElement newHorizontal.

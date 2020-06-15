@@ -1,0 +1,3 @@
+logging
+isLinkingActive
+	^ isLinkingActive

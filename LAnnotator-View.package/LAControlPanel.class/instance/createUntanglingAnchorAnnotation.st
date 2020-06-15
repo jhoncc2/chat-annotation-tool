@@ -3,14 +3,20 @@ createUntanglingAnchorAnnotation
 	| cont |
 	anchorButton := LASwitchButtonElement new.  
 	anchorButton label: 'Anchor'.
+	
+	anchorButton when: BlClickEvent do: [ :e |
+		anchorButton active 
+			ifTrue:  [ self announceAction: LAAnnDisableAnchor new. ]
+			ifFalse: [ self announceAction: LAAnnEnableAnchor new. ]
+	].
 	anchorButton	
 		whenActiveDo: [ 
 			anchorButton  label: 'Anchor'.
-			self fireEvent: (LAUEventSwitchAnchor new)
+			"self fireEvent: (LAUEventSwitchAnchor new)"
 			];
 		whenDeactivateDo: [ 
 			anchorButton label: 'Unanchor'.
-			self fireEvent: (LAUEventSwitchAnchor new)
+			"self fireEvent: (LAUEventSwitchAnchor new)"
 			].
 	cont := LALayoutBoxElement horizontal
 		background: (Color gray alpha: 0.2);

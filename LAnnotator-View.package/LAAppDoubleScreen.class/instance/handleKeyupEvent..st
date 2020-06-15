@@ -6,8 +6,8 @@ handleKeyupEvent: anEvent
 				^ controlPanel switchUntaglingMode.
 			].
 	"changes"
-	anEvent key name = #C ifTrue: [ anEvent consumed: true. ^ listView annotateNext ].
-	anEvent key name = #S ifTrue: [ anEvent consumed: true. ^ listView annotateSelfMessage ].
+	anEvent key name = #C ifTrue: [ anEvent consumed: true. ^ {listView. listViewB} do: #annotateNext ].
+	anEvent key name = #S ifTrue: [ anEvent consumed: true. ^ {listView. listViewB} do: #annotateSelfMessage ].
 	anEvent key name = #A ifTrue: [ 
 		anEvent consumed: true.
 		controlPanel switchAnchorStatus ].
@@ -16,7 +16,7 @@ handleKeyupEvent: anEvent
 		controlPanel switchUntaglingMode ].
 	
 	"arrows"
-	anEvent key name = #ArrowDown ifTrue: [ ^ listView focusNext ].
-	anEvent key name = #ArrowUp ifTrue: [ ^ listView focusPrevious ].
+	anEvent key name = #ArrowDown ifTrue: [ ^ {listView. listViewB} do: #focusNext ].
+	anEvent key name = #ArrowUp ifTrue: [ ^ {listView. listViewB} do: #focusPrevious ].
 	
 	
