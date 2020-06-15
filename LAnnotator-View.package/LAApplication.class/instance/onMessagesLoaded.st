@@ -1,3 +1,3 @@
 initialization
 onMessagesLoaded
-	infoPanel initializeInformation.
+	"infoPanel initializeInformation."
