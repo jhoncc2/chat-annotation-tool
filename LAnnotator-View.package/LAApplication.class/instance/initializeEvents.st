@@ -13,6 +13,5 @@ initializeEvents
 	self onAction: LAAnnEnableLinking do: [ isLinkingActive := true ].
 	self onAction: LAAnnEnableUnlinking do: [ isLinkingActive := false ].
 	
-	
 	self when: BlKeyUpEvent do: [ :e | self handleKeyupEvent: e ].
 	self when: BlKeyDownEvent do: [ :e | self handleKeydownEvent: e ].

@@ -13,7 +13,8 @@ handleKeyupEvent: anEvent
 	
 	anEvent key name = #S ifTrue: [ 
 		anEvent consumed: true.
-		self announceAction: LAAnnLinkAndFocusNext new ].
+		self announceAction: LAAnnSelfLink new.
+	].
 	anEvent key name = #A ifTrue: [ 
 		anEvent consumed: true.
 		self isAnchorActive
