@@ -10,7 +10,7 @@ handlgeUntangleElement: aMessageEl with: bMessageEl
 				self fireEvent: (LARemoveUntangling new 
 											aMessage: aMessageEl;
 											bMessage: bMessageEl;
-											yourself). 
+											yourself).
 			] ifFalse: [
 				controller relateMessage: aMessageEl  messageModel 
 						with: bMessageEl messageModel.
@@ -21,3 +21,5 @@ handlgeUntangleElement: aMessageEl with: bMessageEl
 											bMessage: bMessageEl;
 											yourself). 
 			].
+	"inform that finished action"
+	self announceAction: LAAnnOnFinishLinking new 

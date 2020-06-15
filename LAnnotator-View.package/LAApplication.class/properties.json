@@ -17,7 +17,8 @@
 		"eventLogger",
 		"announcer",
 		"isAnchorActive",
-		"isLinkingActive"
+		"isLinkingActive",
+		"isControlPressed"
 	],
 	"name" : "LAApplication",
 	"type" : "normal"

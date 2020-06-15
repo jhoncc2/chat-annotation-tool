@@ -1,0 +1,3 @@
+logging
+isControlPressed
+	^ isControlPressed

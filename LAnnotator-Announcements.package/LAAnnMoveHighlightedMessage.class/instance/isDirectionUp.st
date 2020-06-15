@@ -1,0 +1,3 @@
+testing
+isDirectionUp
+	^ direction = #up  

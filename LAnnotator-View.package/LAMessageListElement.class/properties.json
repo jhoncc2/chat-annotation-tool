@@ -15,7 +15,9 @@
 		"messageClass",
 		"label",
 		"colorPicker",
-		"listApp"
+		"listApp",
+		"messageAnchoredIndex",
+		"messagesHighlightedIndex"
 	],
 	"name" : "LAMessageListElement",
 	"type" : "normal"
