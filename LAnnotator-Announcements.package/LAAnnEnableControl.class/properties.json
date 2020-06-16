@@ -1,13 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "Announcement",
+	"super" : "LAAnnouncement",
 	"category" : "LAnnotator-Announcements",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"announcingCounter"
-	],
-	"name" : "LAAnnouncement",
+	"instvars" : [ ],
+	"name" : "LAAnnEnableControl",
 	"type" : "normal"
 }

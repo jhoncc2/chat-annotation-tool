@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "LAPanelElement",
+	"category" : "LAnnotator-View-Panel",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"untanglingModeButton",
+		"anchorButton",
+		"moveUpButton",
+		"moveDownButton",
+		"controlModeButton"
+	],
+	"name" : "LACommandInfoPanel",
+	"type" : "normal"
+}

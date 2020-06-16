@@ -1,10 +1,16 @@
 logging
 handleKeyupEvent: anEvent
-	(anEvent key name = #ShiftLeft or: (anEvent key name = #ShiftRight))
+	(anEvent key name = #Z)
 			ifTrue: [
 				anEvent consumed: true.
-				self announceAction: LAAnnEnableLinking.
+				self announceAction: LAAnnEnableLinking new.
 			].
+	anEvent key name = #ShiftLeft ifTrue: [ 
+		anEvent consumed: true. 
+		isControlPressed := false.
+		self announceAction: LAAnnDisableControl new
+		].
+	
 	
 	"arrows"
 	anEvent key name = #ArrowDown ifTrue: [
@@ -19,10 +25,7 @@ handleKeyupEvent: anEvent
 		].
 	
 	"changes"
-	anEvent key name = #Q ifTrue: [ 
-		anEvent consumed: true. 
-		isControlPressed := false ].
-	
+
 	anEvent key name = #D ifTrue: [ 
 		anEvent consumed: true.
 		self announceAction: LAAnnDoLink new.

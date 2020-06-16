@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "LALabelElement",
+	"category" : "LAnnotator-View-widgets",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"activateText",
+		"deactivateText"
+	],
+	"name" : "LASwitchableInfoElement",
+	"type" : "normal"
+}

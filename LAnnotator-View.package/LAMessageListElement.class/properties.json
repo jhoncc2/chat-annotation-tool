@@ -17,7 +17,8 @@
 		"colorPicker",
 		"listApp",
 		"messageAnchoredIndex",
-		"messagesHighlightedIndex"
+		"messagesHighlightedIndex",
+		"isControlEnabled"
 	],
 	"name" : "LAMessageListElement",
 	"type" : "normal"

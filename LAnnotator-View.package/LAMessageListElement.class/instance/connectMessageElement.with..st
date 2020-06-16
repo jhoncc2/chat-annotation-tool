@@ -25,4 +25,6 @@ connectMessageElement: aMElement with: bMElement
 	aMElement elementArcs add: arc.
 	bMElement elementArcs add: arc.
 	
+	
+	
 	self addChild: arc

@@ -13,10 +13,10 @@ initializeEvents
 	self onAction: LAAnnEnableLinking do: [ isLinkingActive := true ].
 	self onAction: LAAnnEnableUnlinking do: [ isLinkingActive := false ].
 	
-	self onAction: LAAnnOnFinishLinking do: [ 
+	"self onAction: LAAnnOnFinishLinking do: [ 
 		 isControlPressed
 			ifFalse: [ self announceAction: LAAnnMoveAnchoredMessage down. ]
-		].
+		]."
 	
 	
 	self when: BlKeyUpEvent do: [ :e | self handleKeyupEvent: e ].

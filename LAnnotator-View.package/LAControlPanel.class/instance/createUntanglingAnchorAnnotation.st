@@ -9,6 +9,7 @@ createUntanglingAnchorAnnotation
 			ifTrue:  [ self announceAction: LAAnnDisableAnchor new. ]
 			ifFalse: [ self announceAction: LAAnnEnableAnchor new. ]
 	].
+
 	anchorButton	
 		whenActiveDo: [ 
 			anchorButton  label: 'Anchor'.

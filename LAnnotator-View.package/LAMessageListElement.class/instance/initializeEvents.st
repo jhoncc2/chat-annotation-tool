@@ -24,13 +24,14 @@ initializeEvents
 			ifFalse: [ self moveHighlightedDown ] ].
 
 	"annotate"
-	self onAction: LAAnnLinkAndFocusNext do: [ self annotateNext ].
+	"self onAction: LAAnnLinkAndFocusNext do: [ self annotateNext ]."
 	self onAction: LAAnnSelfLink do: [ self annotateSelfMessage ].
 	self onAction: LAAnnDoLink do: [ self doLink ].
-	"self onAction: LAAnnUnlink do: [ self doUnink ]."
+	self onAction: LAAnnEnableLinking do: [ self onActionsChanged ].
+	self onAction: LAAnnEnableUnlinking do: [ self onActionsChanged ].
 
 	self onAction: LAAnnMessageClicked do: [ :ann | 
-		self onMessageHighlightedClicked: ann message messageModel. 
+		self onMessageHighlightedClicked: ann message messageModel.
 	].
 	
 	self when: BlClickEvent do: [ :e |
