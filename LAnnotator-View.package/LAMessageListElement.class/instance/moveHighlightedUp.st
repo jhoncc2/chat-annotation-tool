@@ -4,3 +4,4 @@ moveHighlightedUp
 	(self messageElements at: messagesHighlightedIndex) onUnselected.
 	messagesHighlightedIndex := messagesHighlightedIndex - 1.
 	self onActionsChanged.
+	

@@ -6,5 +6,6 @@ onActionsChanged
 		(self messageElements at: messagesHighlightedIndex ) onSelected.
 	] ifFalse: [
 		(self messageElements at: messagesHighlightedIndex ) onDelSelected.
-	]
-	
+	].
+
+	self updateScrollPosition
