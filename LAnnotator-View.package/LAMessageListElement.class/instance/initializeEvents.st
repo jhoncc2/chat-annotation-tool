@@ -12,20 +12,12 @@ initializeEvents
 		self onActionsChanged.
 	].
 	
-	"unlinking mode"
-	self onAction: LAAnnEnableLinking do: [ isDeleteActive := false. self onActionsChanged ].
-	self onAction: LAAnnEnableUnlinking do: [ isDeleteActive := true. self onActionsChanged ].
-	
 	"anchor mode"
-	self onAction: LAAnnEnableAnchor do: [ anchoredMessage := true. self onActionsChanged ].
-	self onAction: LAAnnDisableAnchor do: [ anchoredMessage := false. self onActionsChanged ].
+	"self onAction: LAAnnEnableAnchor do: [ anchoredMessage := true. self onActionsChanged ].
+	self onAction: LAAnnDisableAnchor do: [ anchoredMessage := false. self onActionsChanged ]."
 	
-	self onAction: LAAnnMoveAnchoredMessage do: [ :e | e isDirectionUp 
-			ifTrue: [ self moveAnchoredUp ]
-			ifFalse: [ self moveAnchoredDown ] ].
-	self onAction: LAAnnMoveHighlightedMessage do: [ :e | e isDirectionUp 
-			ifTrue: [ self moveHighlightedUp ]
-			ifFalse: [ self moveHighlightedDown ] ].
+	self onAction: LAAnnMoveAnchoredMessage do: [ :e | self moveAnchored: e ].
+	self onAction: LAAnnMoveHighlightedMessage do: [ :e | self moveHighlighted: e ].
 
 	"annotate"
 	"self onAction: LAAnnLinkAndFocusNext do: [ self annotateNext ]."

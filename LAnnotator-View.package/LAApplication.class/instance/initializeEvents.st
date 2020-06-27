@@ -7,17 +7,13 @@ initializeEvents
 	self when: LAUEventAnnotateNext do: [ :e | listView annotateNext ].
 	self when: LAUSelfLinkingEvent do: [ :e | listView annotateSelfMessage ]."
 	
-	self onAction: LAAnnEnableAnchor do: [ isAnchorActive := true ].
-	self onAction: LAAnnDisableAnchor do: [ isAnchorActive := false ].
+	"self onAction: LAAnnEnableAnchor do: [ isAnchorActive := true ].
+	self onAction: LAAnnDisableAnchor do: [ isAnchorActive := false ]."
 	
-	self onAction: LAAnnEnableLinking do: [ isLinkingActive := true ].
-	self onAction: LAAnnEnableUnlinking do: [ isLinkingActive := false ].
-	
-	"self onAction: LAAnnOnFinishLinking do: [ 
-		 isControlPressed
-			ifFalse: [ self announceAction: LAAnnMoveAnchoredMessage down. ]
-		]."
-	
+	self onAction: LAAnnOnFinishLinking do: [ 
+		isControlPressed ifFalse: [ self announceAction: LAAnnMoveAnchoredMessage down. ].
+		self announceAction: LAAnnScrollToAnchoredMessage new.
+	].
 	
 	self when: BlKeyUpEvent do: [ :e | self handleKeyupEvent: e ].
 	self when: BlKeyDownEvent do: [ :e | self handleKeydownEvent: e ].

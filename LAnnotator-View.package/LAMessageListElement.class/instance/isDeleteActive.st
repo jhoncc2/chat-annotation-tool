@@ -1,3 +1,3 @@
 initialization
 isDeleteActive
-	^ isDeleteActive
+	^ self app isLinkingActive not 

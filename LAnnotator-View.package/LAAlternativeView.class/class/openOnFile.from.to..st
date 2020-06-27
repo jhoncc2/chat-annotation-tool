@@ -12,7 +12,7 @@ openOnFile: readf from: ini to: end
 	self instance messageClass: LADiscordMessageElement.
 	
 	[space := BlSpace new.
-	space extent: 1000@600.
+	space extent: 1000@550.
 	space root addChild: self instance.
 	space show] forkAndWait.
 

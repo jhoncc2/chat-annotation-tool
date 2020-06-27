@@ -1,7 +1,7 @@
 event-handling
 handlgeUntangleElement: aMessageEl with: bMessageEl
 	" create relation at model level"
-		self isDeleteActive 
+		self isDeleteActive  
 			ifTrue: [
 				controller deleteRelationBetween: aMessageEl  messageModel 
 						with: bMessageEl messageModel.

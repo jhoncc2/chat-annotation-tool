@@ -18,6 +18,6 @@ openOnMessageType: dataProviderClass file: readf from: ini to: end
 	self instance loadMessagesFrom: ini to: end.
 	
 	space := BlSpace new.
-	space extent: 1000@800.
+	space extent: 1000@700.
 	space root addChild: self instance.
 	space show

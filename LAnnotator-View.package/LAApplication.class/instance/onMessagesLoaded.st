@@ -1,4 +1,4 @@
 initialization
 onMessagesLoaded
-	infoPanel initializeInformation.
+	"infoPanel initializeInformation."
 	self announceAction: LAAnnMessagesLoaded new

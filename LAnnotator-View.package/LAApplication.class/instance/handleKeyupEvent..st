@@ -2,13 +2,14 @@ logging
 handleKeyupEvent: anEvent
 	(anEvent key name = #Z)
 			ifTrue: [
-				anEvent consumed: true.
+				isLinkingActive := true.
 				self announceAction: LAAnnEnableLinking new.
+				anEvent consumed: true.
 			].
 	anEvent key name = #ShiftLeft ifTrue: [ 
-		anEvent consumed: true. 
 		isControlPressed := false.
-		self announceAction: LAAnnDisableControl new
+		self announceAction: LAAnnDisableControl new.
+		anEvent consumed: true. 
 		].
 	
 	
@@ -41,9 +42,9 @@ handleKeyupEvent: anEvent
 			ifTrue: [ self announceAction: LAAnnDisableAnchor new ] 
 			ifFalse: [ self announceAction: LAAnnEnableAnchor new ] 
 		].
-	anEvent key name = #R ifTrue: [ 
+	"anEvent key name = #R ifTrue: [ 
 		anEvent consumed: true.
 		self isLinkingActive
 			ifTrue: [ self announceAction: LAAnnEnableUnlinking new ] 
-			ifFalse: [ self announceAction: LAAnnEnableLinking new ] ].
+			ifFalse: [ self announceAction: LAAnnEnableLinking new ] ]."
 	
