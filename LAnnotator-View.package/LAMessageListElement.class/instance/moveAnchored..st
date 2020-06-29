@@ -12,4 +12,6 @@ moveAnchored: anEvent
 	messageAnchoredIndex := messageAnchoredIndex + delta.
 	self onActionsChanged.
 	
-	self moveScrollToView: (self messageElements at: messageAnchoredIndex)
+	self announceAction: LAAnnMessageAnchoredMoved new.
+	
+	"self moveScrollToView: (self messageElements at: messageAnchoredIndex)"

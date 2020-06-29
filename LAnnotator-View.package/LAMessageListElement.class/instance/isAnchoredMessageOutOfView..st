@@ -6,4 +6,4 @@ isAnchoredMessageOutOfView: actualYScrollDistance
 	scrollPos := ({(scrollView scrollPosition y negated - actualYScrollDistance). 0} max).
 	
 	^ (view position y < scrollPos)
-		or: [(view position y + view extent y) > (scrollPos + scrollView extent y - view extent y)].
+		or: [view position y > (scrollPos + scrollView extent y - view extent y)].

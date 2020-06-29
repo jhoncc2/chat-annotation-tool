@@ -1,3 +1,3 @@
 initialization
 updatePercentage: aPercentage
-	self size: (self absoluteSize x * aPercentage)@(self absoluteSize y).
+	self size: (self absoluteSize x)@(self absoluteSize y * aPercentage).

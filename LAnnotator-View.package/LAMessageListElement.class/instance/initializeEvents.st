@@ -13,6 +13,16 @@ initializeEvents
 		]
 	 ].
 
+	self onAction: LAAnnScrollToAnchoredMessage do: [ self moveScrollToView: (self messageElements at: messageAnchoredIndex) ].
+
+	self onAction: LAAnnMessageAnchoredMoved do: [ self updateSimilarityFor: self messageAnchored].
+	
+	self onAction: LAAnnMoveHighlightedToAnchored do: [
+		self messageHighlighted onUnselected.
+		messagesHighlightedIndex := messageAnchoredIndex.
+		self onActionsChanged. 
+		].
+
 	self onAction: LAAnnMessagesLoaded do: [ :e |
 		messageAnchoredIndex := 1. 
 		messagesHighlightedIndex := 1.

@@ -6,4 +6,5 @@ show: aMessage
 	view onStrongSelected.
 	view index: aMessage messageModel index.
 	self addChild: view.
+	self addChild: jumpButton.
 	self height: aMessage height.

@@ -16,12 +16,14 @@ handleKeyupEvent: anEvent
 	"arrows"
 	anEvent key name = #ArrowDown ifTrue: [
 		isControlPressed 
-			ifTrue: [ self announceAction: LAAnnMoveAnchoredMessage down ]
+			ifTrue: [ self announceAction: LAAnnMoveAnchoredMessage down.
+				self announceAction: LAAnnScrollToAnchoredMessage new. ]
 			ifFalse: [ self announceAction: LAAnnMoveHighlightedMessage down ]
 		].
 	anEvent key name = #ArrowUp ifTrue: [
 		isControlPressed 
-			ifTrue: [ self announceAction: LAAnnMoveAnchoredMessage up ]
+			ifTrue: [ self announceAction: LAAnnMoveAnchoredMessage up.
+				self announceAction: LAAnnScrollToAnchoredMessage new. ]
 			ifFalse: [ self announceAction: LAAnnMoveHighlightedMessage up ]
 		].
 	
