@@ -1,6 +1,7 @@
 initialization
 initializeContent
 	super initializeContent.
+	self createSimilitudData.
 	self createControlModeInfo.
 	self createUntanglingModeControl.
 	self createUntanglingContinuousAnnotation.

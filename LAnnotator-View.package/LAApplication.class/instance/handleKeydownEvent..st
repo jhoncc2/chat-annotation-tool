@@ -1,5 +1,7 @@
 logging
 handleKeydownEvent: anEvent
+	self announceAction: (LAAnnKeyDown key: anEvent key name).
+	
 	(anEvent key name = #Z)
 			ifTrue: [ 
 				isLinkingActive := false.

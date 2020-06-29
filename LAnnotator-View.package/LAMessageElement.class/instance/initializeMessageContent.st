@@ -1,7 +1,5 @@
 initialize
 initializeMessageContent
-	| messageText |
-	
-	messageText := (self newPharagraphElement) text: self messageModel parsedContent.
+	messagePharagraph := (self newPharagraphElement) text: self messageModel parsedContent.
 
-	self addChild: messageText 
+	self addChild: messagePharagraph 

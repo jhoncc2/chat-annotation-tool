@@ -11,12 +11,20 @@ handlgeUntangleElement: aMessageEl with: bMessageEl
 											aMessage: aMessageEl;
 											bMessage: bMessageEl;
 											yourself).
+				self announceAction: (LAAnnMessageUnlink new 
+											aMessage: aMessageEl;
+											bMessage: bMessageEl;
+											yourself). 
 			] ifFalse: [
 				controller relateMessage: aMessageEl  messageModel 
 						with: bMessageEl messageModel.
 				"create relation at view level"
 				self connectMessageElement: aMessageEl with: bMessageEl.
 				self fireEvent: (LACreateUntangling new 
+											aMessage: aMessageEl;
+											bMessage: bMessageEl;
+											yourself). 
+				self announceAction: (LAAnnMessageLink new 
 											aMessage: aMessageEl;
 											bMessage: bMessageEl;
 											yourself). 

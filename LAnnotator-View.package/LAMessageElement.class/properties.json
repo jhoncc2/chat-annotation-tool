@@ -16,7 +16,9 @@
 		"delSelected",
 		"elementArcs",
 		"indexLabel",
-		"index"
+		"index",
+		"messagePharagraph",
+		"strongSelected"
 	],
 	"name" : "LAMessageElement",
 	"type" : "normal"

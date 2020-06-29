@@ -6,6 +6,7 @@ createUntanglingAnchorAnnotation
 
 	cont := LALayoutBoxElement horizontal
 		background: (Color gray alpha: 0.2);
+		margin: (BlInsets all: 0.3);
 		yourself.
 	
 	cont addChild: (LALayoutBoxElement horizontal 

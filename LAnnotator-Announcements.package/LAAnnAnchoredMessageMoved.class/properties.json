@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "LAAnnAfterMoveMessage",
+	"category" : "LAnnotator-Announcements",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "LAAnnAnchoredMessageMoved",
+	"type" : "normal"
+}

@@ -1,0 +1,3 @@
+initialization
+timestamp
+	^ Time now

@@ -1,0 +1,3 @@
+accessing
+empty 
+	^ text isEmpty

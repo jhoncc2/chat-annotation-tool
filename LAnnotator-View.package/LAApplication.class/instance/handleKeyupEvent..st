@@ -1,5 +1,7 @@
 logging
 handleKeyupEvent: anEvent
+	self announceAction: (LAAnnKeyUp key: anEvent key name).
+	
 	(anEvent key name = #Z)
 			ifTrue: [
 				isLinkingActive := true.
@@ -39,12 +41,12 @@ handleKeyupEvent: anEvent
 		anEvent consumed: true.
 		self announceAction: LAAnnSelfLink new.
 	].
-	anEvent key name = #A ifTrue: [ 
+	"anEvent key name = #A ifTrue: [ 
 		anEvent consumed: true.
 		self isAnchorActive
 			ifTrue: [ self announceAction: LAAnnDisableAnchor new ] 
 			ifFalse: [ self announceAction: LAAnnEnableAnchor new ] 
-		].
+		]."
 	"anEvent key name = #R ifTrue: [ 
 		anEvent consumed: true.
 		self isLinkingActive

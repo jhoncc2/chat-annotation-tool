@@ -3,6 +3,7 @@ initialize
 	super initialize.
 	self initializeLayout.
 	isMouseOver := false.
+	strongSelected := false.
 	selected := false.
 	delSelected := false.
 	visited := false.

@@ -7,13 +7,13 @@ similarityBar
 	commSimilarity := LABar newAbsoluteSize: 8@20 color: Color blue.
 	
 	panel := LAPanelElement new 
-		layout: (BlLinearLayout horizontal alignTopCenter; cellSpacing: 1; yourself);
+		layout: (BlLinearLayout horizontal alignBottomLeft; cellSpacing: 1; yourself);
 		padding: (BlInsets all: 0);
 		margin: (BlInsets all: 0);
-		background: (Color white alpha: 0.1);
-		constraintsDo: [ :c | 
+		background: (Color white alpha: 0.1).
+		"constraintsDo: [ :c | 
 			c horizontal fitContent.
-			c vertical fitContent ].
+			c vertical fitContent ]."
 	panel addChild: timeSimilarity.
 	panel addChild: textSimilarity.
 	panel addChild: commSimilarity.

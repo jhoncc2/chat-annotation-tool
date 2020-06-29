@@ -1,5 +1,6 @@
 accessing
 onCursorMoved
+	self halt.
 	self controller ifNil: [ ^ self ].
 	self textElement editor hasSelection ifFalse: [ 
 		self selected ifNotNil: [ 

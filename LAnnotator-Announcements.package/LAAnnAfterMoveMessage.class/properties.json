@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "LAAnnouncement",
+	"category" : "LAnnotator-Announcements",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"aMessage",
+		"bMessage"
+	],
+	"name" : "LAAnnAfterMoveMessage",
+	"type" : "normal"
+}
