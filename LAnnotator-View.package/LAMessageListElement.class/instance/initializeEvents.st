@@ -4,6 +4,13 @@ initializeEvents
 	
 	self when: BlMouseWheelEvent do: [ :e |
 		self app announcer announce: (LAAnnScroll new scrollEvent: e; scrollElement: self parent; yourself).
+		(self isAnchoredMessageOutOfView: (e vector y * 20) "=100") ifTrue: [ 
+			self announceAction: (LAAnnOnAnchoredVisibility 
+				message: (self messageElements at: messageAnchoredIndex) isVisible: false).
+		] ifFalse: [ 
+			self announceAction: (LAAnnOnAnchoredVisibility 
+				message: (self messageElements at: messageAnchoredIndex ) isVisible: true).
+		]
 	 ].
 
 	self onAction: LAAnnMessagesLoaded do: [ :e |

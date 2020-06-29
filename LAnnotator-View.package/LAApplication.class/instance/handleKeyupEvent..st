@@ -29,6 +29,7 @@ handleKeyupEvent: anEvent
 
 	anEvent key name = #D ifTrue: [ 
 		anEvent consumed: true.
+		self announceAction: (LAAnnOnAnchoredVisibility visible).
 		self announceAction: LAAnnDoLink new.
 		].
 	

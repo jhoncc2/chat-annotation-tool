@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "LAPanelElement",
+	"category" : "LAnnotator-View-Panel",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "LAAnchoredMessagePanel",
+	"type" : "normal"
+}
