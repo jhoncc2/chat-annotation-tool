@@ -1,6 +1,7 @@
 visibility
 show: aMessage
 	| view |
+	isVisible := true.
 	self removeChildren.
 	view := (LAJkkMessageElement newWithModel: aMessage messageModel).
 	view onStrongSelected.

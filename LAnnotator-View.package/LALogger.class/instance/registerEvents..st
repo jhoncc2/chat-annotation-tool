@@ -13,4 +13,5 @@ registerEvents: announcer
 	announcer when: LAAnnMessageUnlink do: [ :e | self logEvent: e ].
 	announcer when: LAAnnHighlightedMessageMoved do: [ :e | self logEvent: e ].
 	announcer when: LAAnnAnchoredMessageMoved do: [ :e | self logEvent: e ].
-	
+	announcer when: LAAnnButtonPressed do: [ :e | self logEvent: e ].
+	announcer when: LAAnnAnchoredVisibilityChanged do: [ :e | self logEvent: e ].

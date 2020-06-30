@@ -18,6 +18,7 @@ moveHighlighted: anEvent
 				message: (self messageElements at: messageAnchoredIndex) isVisible: false) ]
 		ifFalse: [ self announceAction:  (LAAnnOnAnchoredVisibility 
 				message: (self messageElements at: messageAnchoredIndex) isVisible: true)].
+	
 	self announceAction: (LAAnnHighlightedMessageMoved new 
 											aMessage: (self messageElements at: highlightedIndexOld);
 											bMessage: (self messageElements at: messagesHighlightedIndex);

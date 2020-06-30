@@ -7,4 +7,7 @@ onSelected
 					paint: (Color black); 
 					width: 3;
 					build).
-	"self background: self selectedColor"
+	strongSelected 
+		ifTrue: [ self background: self strongSelectedColor ]
+		ifFalse: [ self background: self groupedColor ]
+	

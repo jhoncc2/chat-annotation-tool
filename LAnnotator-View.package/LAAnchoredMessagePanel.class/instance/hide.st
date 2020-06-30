@@ -1,3 +1,4 @@
 visibility
 hide
-	self height: 0
+	self height: 0.
+	isVisible := false

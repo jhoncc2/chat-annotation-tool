@@ -7,6 +7,7 @@ initializeLayout
 	jumpButton label: 'Jump'.
 	jumpButton
 		when: BlClickEvent do: [
+			self announceAction: (LAAnnButtonPressed key: #Jump).
 			self announceAction: LAAnnOnAnchoredVisibility visible.
 			self announceAction: LAAnnScrollToAnchoredMessage new.
 			self announceAction: LAAnnMoveHighlightedToAnchored new.
