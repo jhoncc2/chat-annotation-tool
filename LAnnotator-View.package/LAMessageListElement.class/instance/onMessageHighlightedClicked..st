@@ -7,8 +7,10 @@ onMessageHighlightedClicked: aMessageModel
 	] ifFalse: [ 
 		
 	]."
+	| idx |
 	(self messageElements at: messagesHighlightedIndex) onUnselected. 
-	messagesHighlightedIndex := aMessageModel index.
+	idx := self getIndexFromMessageModel: aMessageModel. 
+	messagesHighlightedIndex := idx.
 	self doLink.
 	self onActionsChanged
 	
