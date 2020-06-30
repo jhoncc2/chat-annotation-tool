@@ -70,18 +70,29 @@ LAAppComparingElement instance loadLinksFrom: annotation_files
 
 ### training 
 ```
-file := './pharo-local/iceberg/jhoncc2/chat-annotation-tool/data/jkk-training/all-data.txt'.
 
-logfile := './all-data.log.txt'.
+file := './pharo-local/iceberg/jhoncc2/chat-annotation-tool/data/jkk-training/all-data.txt'.
+logfile := './2015-01-20_04.ascii.log.train-user.txt'.
 
 LAJkkDataManager instance filePath: file; loadMessages.
-LAAlternativeView openOnMessageType: LAJkkDataManager file: file from: 80 to: 200.
+LAAlternativeView openOnMessageType: LAJkkDataManager file: file from: 1 to: 200.
 
 logger := LALogger new path: logfile; yourself.
 LAAlternativeView instance eventLogger: logger.
 
+logger stop.
+savedLinksFile := './2015-01-20_04.annotation.train-user.txt'.
+LAAlternativeView saveOnFile: savedLinksFile.
+
 ```
 
+#### post training
+```
+logger stop.
+savedLinksFile := './saved_links.txt'.
+LAApplicationElement saveOnFile: savedLinksFile.
+```
+#### export
 ```
 linkFile := './pharo-local/iceberg/jhoncc2/chat-annotation-tool/data/jkk-training/all-links.txt'.
 LAAlternativeView instance loadLinksFrom: linkFile.
@@ -101,8 +112,15 @@ LAAlternativeView instance eventLogger: logger.
 
 ```
 
+#### post pilot
 ```
+logger stop.
+savedLinksFile := './2015-01-20_04.annotation.user.txt'.
+LAApplicationElement saveOnFile: savedLinksFile.
+```
+#### export
 
+```
 linkFile := './pharo-local/iceberg/jhoncc2/chat-annotation-tool/data/pilot/2015-01-20_04.annotation.jonathan.txt'.
 LAAlternativeView instance loadLinksFrom: linkFile.
 
