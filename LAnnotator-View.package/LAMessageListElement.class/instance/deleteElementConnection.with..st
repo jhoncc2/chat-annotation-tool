@@ -27,7 +27,8 @@ deleteElementConnection: aMElement with: bMElement
 	
 	arc ifNotEmpty: [
 		aMElement elementArcs remove: arc first.
-		bMElement elementArcs remove: arc first. ].
+		aMElement index = bMElement index ifFalse: [ bMElement elementArcs remove: arc first. ]
+		].
 	
 	
 	self removeChild: arc first.

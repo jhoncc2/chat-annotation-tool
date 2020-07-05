@@ -28,6 +28,7 @@ handlgeUntangleElement: aMessageEl with: bMessageEl
 											aMessage: aMessageEl;
 											bMessage: bMessageEl;
 											yourself). 
+				"inform that finished action"
+				self announceAction: LAAnnOnFinishLinking new
 			].
-	"inform that finished action"
-	self announceAction: LAAnnOnFinishLinking new 
+	 

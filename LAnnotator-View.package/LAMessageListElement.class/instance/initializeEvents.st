@@ -19,7 +19,7 @@ initializeEvents
 	
 	self onAction: LAAnnMoveHighlightedToAnchored do: [
 		self messageHighlighted onUnselected.
-		messagesHighlightedIndex := messageAnchoredIndex.
+		messagesHighlightedIndex := {(messageAnchoredIndex - 1). 0}  max.
 		self onActionsChanged. 
 		].
 
