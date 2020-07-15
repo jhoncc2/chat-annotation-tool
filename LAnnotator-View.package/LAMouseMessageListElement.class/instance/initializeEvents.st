@@ -1,6 +1,11 @@
 initialization
 initializeEvents
-	super initializeEvents.
+
+	self onAction: LAAnnMoveHighlightedMessageToIndex do: [ :e |
+		self messageHighlighted onUnselected.
+		messagesHighlightedIndex := e index.
+		self onActionsChanged. 
+	].
 	
 	self when: BlMouseWheelEvent do: [ :e |
 		self app announcer announce: (LAAnnScroll new scrollEvent: e; scrollElement: self parent; yourself).

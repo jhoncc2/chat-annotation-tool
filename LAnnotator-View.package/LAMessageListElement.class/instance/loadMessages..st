@@ -12,8 +12,8 @@ loadMessages: messageModelsList
 		].
 	
 	"update saved connections"
-	self messageElements do: [ :e | 
+	"self messageElements do: [ :e | 
 		e messageModel messageRelations do: [ :r | 
 			self connectMessageElement: e with: r messageElement allowArcs: false. 
 			]
-	] 
+	]"

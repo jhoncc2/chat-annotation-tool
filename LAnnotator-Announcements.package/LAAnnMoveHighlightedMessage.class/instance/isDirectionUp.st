@@ -1,3 +1,3 @@
-testing
-isDirectionUp
-	^ direction = #up  
+accessing
+isDirectionUp 
+	^ direction == #up

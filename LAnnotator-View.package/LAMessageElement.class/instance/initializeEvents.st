@@ -1,16 +1,22 @@
 initialize
 initializeEvents
 	super initializeEvents.
-	self when: BlMouseOutEvent do: [ :e |
-		Transcript show: 'out ' ; show: self messageModel index; cr. 
+	self when: BlMouseLeaveEvent do: [ :e |
+		self announceAction: (LAAnnMouseLeaveMessage new 
+											message: self; yourself)
 		].
 	
-	self when: BlMouseOutEvent do: [ :e |
-		Transcript show: 'in ' ; show: self messageModel index; cr. 
+	self when: BlMouseEnterEvent do: [ :e |
+		self announceAction: (LAAnnMouseEnterMessage new 
+											message: self; yourself). 
+			
 		].
 
 	self onAction: LAAnnTextSelected do: [ :e |
 		e empty 
 			ifTrue: [ self resetColorIfNeeded ] 
 			ifFalse: [ self highlightIfContains: e text ]
-		 ]
+		].
+	self when: BlClickEvent do: [ :e |
+		self announceAction: (LAAnnMessageClicked new message: self; yourself).
+		]

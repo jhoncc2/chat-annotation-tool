@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "LAAnnMessageClicked",
+	"name" : "LAAnnMouseEnterMessage",
 	"type" : "normal"
 }

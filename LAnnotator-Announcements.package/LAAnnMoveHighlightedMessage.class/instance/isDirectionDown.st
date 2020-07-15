@@ -1,3 +1,3 @@
-testing
-isDirectionDown
-	^ self isDirectionUp not
+accessing
+isDirectionDown 
+	^ self isDirectionUp not 

@@ -1,3 +1,0 @@
-initialization
-initializeContent
-	self initializePanels.

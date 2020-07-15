@@ -1,11 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "LAAnnSingleMessageEvent",
+	"super" : "LAAnnouncement",
 	"category" : "LAnnotator-Announcements",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "LAAnnMessageClicked",
+	"instvars" : [
+		"index"
+	],
+	"name" : "LAAnnMoveHighlightedMessageToIndex",
 	"type" : "normal"
 }

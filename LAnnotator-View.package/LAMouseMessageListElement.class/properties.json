@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "LAAnnSingleMessageEvent",
-	"category" : "LAnnotator-Announcements",
+	"super" : "LAMessageListElement",
+	"category" : "LAnnotator-View-MessageList",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "LAAnnMessageClicked",
+	"name" : "LAMouseMessageListElement",
 	"type" : "normal"
 }

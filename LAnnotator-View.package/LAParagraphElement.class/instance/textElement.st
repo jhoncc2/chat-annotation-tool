@@ -1,14 +1,18 @@
 accessing
 textElement 
+	| textEditor |
 	^ textElement ifNil: [ 
 		textElement :=  BrEditorElement new.
-		textElement editor: (BrTextEditor new when: BrTextEditorCursorMovedEvent do: [ :e |
+		textEditor := BrTextEditor new.
+		textElement editor: textEditor.
+	
+		textEditor when: BrTextEditorCursorMovedEvent do: [ :e |
 			"self onCursorMoved."
 			self textElement editor hasSelection ifTrue: [
 				self announceAction: (LAAnnTextSelected text: self textElement editor selectedText).
 			] ifFalse: [ 
 				self announceAction: (LAAnnTextSelected empty).
 			]
-			]; 
-		yourself).
+			].
+		textElement
 	]

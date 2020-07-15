@@ -5,5 +5,8 @@ initializeMessageContent
 		background: (Color gray alpha: 0.1);
 		yourself. 
 	self addChild: messagePharagraph.
+	messagePharagraph constraintsDo: [ :c | 
+			c horizontal matchParent.
+			c vertical fitContent ].
 	
 	
