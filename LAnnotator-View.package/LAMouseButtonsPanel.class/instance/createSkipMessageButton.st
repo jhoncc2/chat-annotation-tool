@@ -17,5 +17,6 @@ createSkipMessageButton
 							width: 150;
 							yourself).
 	cont addChild: nextButton.
+	cont margin: (BlInsets left: 4).
 	
 	self addChild: cont

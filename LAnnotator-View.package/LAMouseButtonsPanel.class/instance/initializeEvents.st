@@ -2,8 +2,6 @@ initialization
 initializeEvents
 	super initializeEvents.
 	
-	
-	
 	"anchor mode"
 	"self onAction: LAAnnMoveAnchoredMessage do: [ :e | 
 		e isDirectionUp ifTrue: [ moveUpButton up activate ] ].

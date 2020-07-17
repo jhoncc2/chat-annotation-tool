@@ -5,7 +5,7 @@ initializeMessageButtonStart
 		c minWidth: 20.
 		c vertical matchParent
 		].
-	button background: Color red.
+	button background: (Color darkGray alpha: 0.7).
 	self addChild: button.
 	button when: BlMouseDownEvent do: [ :e |
 		self announceAction: (LAAnnMessageUnlinkButton new message: self; yourself).

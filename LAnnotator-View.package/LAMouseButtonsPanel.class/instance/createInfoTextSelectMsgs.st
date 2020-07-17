@@ -18,5 +18,5 @@ createInfoTextSelectMsgs
 							alignLeft;
 							width: 120;
 							yourself).
-								
+	cont margin: (BlInsets all: 3).
 	self addChild: cont

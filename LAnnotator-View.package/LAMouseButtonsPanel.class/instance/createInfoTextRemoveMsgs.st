@@ -1,5 +1,5 @@
 initialization
-createInfoTextLinkToMsgs
+createInfoTextRemoveMsgs
 	| cont  |
 	
 	cont := LALayoutBoxElement horizontal
@@ -7,15 +7,14 @@ createInfoTextLinkToMsgs
 		yourself.
 		
 	cont addChild: (LALayoutBoxElement horizontal 
-							border: (BlBorder builder 
-									paint: (Color black); width: 3; build);
+							background: (Color darkGray alpha: 0.7);
 							alignLeft;
 							width: 25;
 							height: 20;
 							yourself).
 
 	cont addChild: (LALayoutBoxElement horizontal 
-							addChild: (LABasicLabelElement text: 'link to') ; 
+							addChild: (LABasicLabelElement text: 'remove link to') ; 
 							alignLeft;
 							width: 120;
 							yourself).

@@ -17,5 +17,6 @@ createUnlinkAllFromMessageButton
 							width: 250;
 							yourself).
 	cont addChild: nextButton.
+	cont margin: (BlInsets left: 5).
 	
 	self addChild: cont
