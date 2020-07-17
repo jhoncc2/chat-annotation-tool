@@ -17,6 +17,12 @@ initializeEvents
 			ifTrue: [ self resetColorIfNeeded ] 
 			ifFalse: [ self highlightIfContains: e text ]
 		].
-	self when: BlClickEvent do: [ :e |
-		self announceAction: (LAAnnMessageClicked new message: self; yourself).
-		]
+	self when: BlMouseDownEvent do: [ :e | 
+		
+		e button class = BlMousePrimaryButton ifTrue: [ 
+			self announceAction: (LAAnnMessageClicked new message: self; yourself). ].
+		
+		e button class = BlMouseSecondaryButton ifTrue: [
+			self announceAction: (LAAnnMessageRightClicked new message: self; yourself).]
+		].
+		

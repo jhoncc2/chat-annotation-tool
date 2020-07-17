@@ -1,9 +1,37 @@
 initialization
 initializeEvents
+	
+	self onAction: LAAnnPreselectAnchorMessage do: [ :e |
+		self isPreselectActive: true.
+		self onActionsChanged.
+	].
+
+	self onAction: LAAnnUnPreselectAnchorMessage do: [ :e |
+		self isPreselectActive: false.
+		self onActionsChanged.
+	].
+
+	self onAction: LAAnnRemoveAllLinksFromAnchor do: [ :e |
+		self unlinkAllFromMessage: self messageAnchored.
+	].
+
+	self onAction: LAAnnDoLinkMessage do: [ :e |
+		self linkMessage: e aMessage to: e bMessage
+	].
+
+	self onAction: LAAnnDoUnlinkMessage do: [ :e |
+		self unlinkMessage: e aMessage to: e bMessage
+	].
 
 	self onAction: LAAnnMoveHighlightedMessageToIndex do: [ :e |
 		self messageHighlighted onUnselected.
 		messagesHighlightedIndex := e index.
+		self onActionsChanged. 
+	].
+	
+	self onAction: LAAnnMoveAnchoredMessageToIndex do: [ :e |
+		self messageAnchored onUnselected.
+		messageAnchoredIndex := e index.
 		self onActionsChanged. 
 	].
 	
@@ -20,11 +48,11 @@ initializeEvents
 
 	self onAction: LAAnnScrollToAnchoredMessage do: [ self moveScrollToView: (self messageElements at: messageAnchoredIndex) ].
 
-	self onAction: LAAnnAnchoredMessageMoved do: [ self updateSimilarityFor: self messageAnchored].
+	self onAction: LAAnnAnchoredMessageMoved do: [ "self updateSimilarityFor: self messageAnchored"].
 	
 	self onAction: LAAnnMoveHighlightedToAnchored do: [
 		self messageHighlighted onUnselected.
-		messagesHighlightedIndex := {(messageAnchoredIndex - 1). 0}  max.
+		messagesHighlightedIndex := {(messageAnchoredIndex - 1). 1}  max.
 		self onActionsChanged. 
 		].
 
@@ -46,8 +74,12 @@ initializeEvents
 	"self onAction: LAAnnLinkAndFocusNext do: [ self annotateNext ]."
 	self onAction: LAAnnSelfLink do: [ self annotateSelfMessage ].
 	self onAction: LAAnnDoLink do: [ self doLink ].
-	self onAction: LAAnnEnableLinking do: [ self onActionsChanged ].
-	self onAction: LAAnnEnableUnlinking do: [ self onActionsChanged ].
+	self onAction: LAAnnEnableLinking do: [ 
+		isLinkingActive := true. 
+		self onActionsChanged ].
+	self onAction: LAAnnEnableUnlinking do: [ 
+		isLinkingActive := false. 
+		self onActionsChanged ].
 
 	self onAction: LAAnnMessageClicked do: [ :ann | 
 		self onMessageHighlightedClicked: ann message messageModel.

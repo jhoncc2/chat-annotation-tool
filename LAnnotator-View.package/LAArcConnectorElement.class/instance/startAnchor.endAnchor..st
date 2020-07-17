@@ -4,11 +4,11 @@ startAnchor: aBlElement endAnchor: bBlElement
 	
 		
 	aBlElement = bBlElement ifFalse: [
-		tmp2 := aBlElement bounds asRectangle.
-		tmp3 := bBlElement bounds asRectangle.
+		tmp2 := aBlElement messageBounds .
+		tmp3 := bBlElement messageBounds .
 	] ifTrue: [ 
-		tmp2 := bBlElement bounds asRectangle translateBy: 0@(-10).
-		tmp3 := bBlElement bounds asRectangle translateBy: 0@10.
+		tmp2 := bBlElement messageBounds  translateBy: 0@(-10).
+		tmp3 := bBlElement messageBounds  translateBy: 0@10.
 	].
 	
 	self isVertical

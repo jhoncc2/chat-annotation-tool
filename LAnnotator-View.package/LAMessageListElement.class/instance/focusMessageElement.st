@@ -5,7 +5,7 @@ focusMessageElement
 	self anchoredMessage ifTrue: [ 
 		self firstMessageSelected onStrongSelected.
 	] ifFalse: [
-		self isDeleteActive 
+		self isLinkingActive not 
 			ifTrue: [self firstMessageSelected onDelSelected]
 			ifFalse: [
 				self firstMessageSelected onSelected].]

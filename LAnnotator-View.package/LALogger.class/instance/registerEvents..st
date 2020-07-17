@@ -9,8 +9,8 @@ registerEvents: announcer
 	announcer when: LAAnnEnableControl do: [ :e | self logEvent: e ].
 	
 	"After events/ logging events"
-	announcer when: LAAnnMessageLink do: [ :e | self logEvent: e ].
-	announcer when: LAAnnMessageUnlink do: [ :e | self logEvent: e ].
+	announcer when: LAAnnOnMessageLinked do: [ :e | self logEvent: e ].
+	announcer when: LAAnnOnMessageUnlinked do: [ :e | self logEvent: e ].
 	announcer when: LAAnnHighlightedMessageMoved do: [ :e | self logEvent: e ].
 	announcer when: LAAnnAnchoredMessageMoved do: [ :e | self logEvent: e ].
 	announcer when: LAAnnButtonPressed do: [ :e | self logEvent: e ].

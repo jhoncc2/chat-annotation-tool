@@ -1,8 +1,10 @@
 initialization
 loadMessageLinks
 	"update saved connections"
-	self messageElements do: [ :e | 
+	[ 
+		1 seconds wait.
+		self messageElements do: [ :e | 
 		e messageModel messageRelations do: [ :r | 
-			self connectMessageElement: e with: r messageElement allowArcs: false. 
+			self connectMessageElement: e with: r messageElement allowArcs: true. 
 			]
-	] 
+	]] fork

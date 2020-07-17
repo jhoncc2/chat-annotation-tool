@@ -41,8 +41,8 @@ initializeEvents
 	"self onAction: LAAnnLinkAndFocusNext do: [ self annotateNext ]."
 	self onAction: LAAnnSelfLink do: [ self annotateSelfMessage ].
 	self onAction: LAAnnDoLink do: [ self doLink ].
-	self onAction: LAAnnEnableLinking do: [ self onActionsChanged ].
-	self onAction: LAAnnEnableUnlinking do: [ self onActionsChanged ].
+	self onAction: LAAnnEnableLinking do: [ isLinkingActive = true. self onActionsChanged ].
+	self onAction: LAAnnEnableUnlinking do: [ isLinkingActive = false. self onActionsChanged ].
 
 	self onAction: LAAnnMessageClicked do: [ :ann | 
 		self onMessageHighlightedClicked: ann message messageModel.

@@ -11,14 +11,15 @@
 		"anchoredMessage",
 		"messagesSelected",
 		"uiIndex",
-		"isDeleteActive",
 		"messageClass",
 		"label",
 		"colorPicker",
 		"listApp",
 		"messageAnchoredIndex",
 		"messagesHighlightedIndex",
-		"isControlEnabled"
+		"isControlEnabled",
+		"isLinkingActive",
+		"isPreselectActive"
 	],
 	"name" : "LAMessageListElement",
 	"type" : "normal"

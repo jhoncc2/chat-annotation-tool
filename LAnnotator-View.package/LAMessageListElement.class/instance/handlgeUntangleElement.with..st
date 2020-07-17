@@ -1,7 +1,7 @@
 event-handling
 handlgeUntangleElement: aMessageEl with: bMessageEl
 	" create relation at model level"
-		self isDeleteActive  
+		self isLinkingActive not 
 			ifTrue: [
 				controller deleteRelationBetween: aMessageEl  messageModel 
 						with: bMessageEl messageModel.
@@ -11,7 +11,7 @@ handlgeUntangleElement: aMessageEl with: bMessageEl
 											aMessage: aMessageEl;
 											bMessage: bMessageEl;
 											yourself).
-				self announceAction: (LAAnnMessageUnlink new 
+				self announceAction: (LAAnnOnMessageUnlinked new 
 											aMessage: aMessageEl;
 											bMessage: bMessageEl;
 											yourself). 
@@ -24,7 +24,7 @@ handlgeUntangleElement: aMessageEl with: bMessageEl
 											aMessage: aMessageEl;
 											bMessage: bMessageEl;
 											yourself). 
-				self announceAction: (LAAnnMessageLink new 
+				self announceAction: (LAAnnOnMessageLinked new 
 											aMessage: aMessageEl;
 											bMessage: bMessageEl;
 											yourself). 

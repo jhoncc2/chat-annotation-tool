@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "LAAnnMessageAction",
+	"category" : "LAnnotator-Announcements",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "LAAnnDoLinkMessage",
+	"type" : "normal"
+}

@@ -1,3 +1,3 @@
 logging
 isLinkingActive
-	^ isLinkingActive
+	^ isLinkingActive ifNil: [ isLinkingActive := true ]
