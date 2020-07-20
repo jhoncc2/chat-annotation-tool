@@ -5,9 +5,11 @@ initializeContent
 	self createInfoTextSelectMsgs.
 	self createInfoTextLinkToMsgs.
 	self createInfoTextRemoveMsgs.
+	self createInfoTextAnnotatedMsgs.
+	self createInfoTextRelatedMsgs.
 	self addChild: (LALayoutBoxElement horizontal 
 							alignLeft;
-							width: 250;
+							width: 50;
 							height: 20;
 							yourself).
 	
