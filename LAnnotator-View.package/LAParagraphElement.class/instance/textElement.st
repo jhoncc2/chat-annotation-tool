@@ -15,9 +15,9 @@ textElement
 				self announceAction: (LAAnnTextSelected empty).
 			]
 			].
-		textEditor styler: (LATextStyler new
+		"textEditor styler: (LATextStyler new
 				selectableElement: self; 
 				highlightList: self controller dataProvider chatParticipants; 
-				yourself).
+				yourself)."
 		textElement
 	]

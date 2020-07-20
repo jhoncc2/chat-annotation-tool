@@ -4,9 +4,9 @@ privateStyle: aText
 	"aText = '!details' ifTrue: [ self halt. ]."
 	"self selectableElement ifNil: [ ^ aText ]."
 	
-	self selectableElement selected ifTrue: [
+	"self selectableElement selected ifTrue: [
 		aText background: Color blue.
 	] ifFalse: [
 		aText background: Color green.
-	].
+	]."
 	^ aText
