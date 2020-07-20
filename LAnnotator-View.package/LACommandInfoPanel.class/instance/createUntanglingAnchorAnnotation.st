@@ -6,15 +6,15 @@ createUntanglingAnchorAnnotation
 
 	cont := LALayoutBoxElement horizontal
 		background: (Color gray alpha: 0.2);
-		margin: (BlInsets all: 0.3);
+		margin: (BlInsets all: 2);
 		yourself.
 	
 	cont addChild: (LALayoutBoxElement horizontal 
-							addChild: (LABasicLabelElement text: '[A]') ; 
+							addChild: (LALabelElement text: '[A]') ; 
 							yourself).
 							
 	cont addChild: (LALayoutBoxElement horizontal 
-							addChild: (LABasicLabelElement text: 'Anchor Message') ; 
+							addChild: (LALabelElement text: 'Anchor Message') ; 
 							alignLeft;
 							width: 150;
 							yourself).

@@ -6,7 +6,8 @@
 		"messageRelations",
 		"messageRelationIds",
 		"messageElement",
-		"messageRoot"
+		"messageRoot",
+		"messageMentions"
 	],
 	"name" : "LAModelTrait"
 }

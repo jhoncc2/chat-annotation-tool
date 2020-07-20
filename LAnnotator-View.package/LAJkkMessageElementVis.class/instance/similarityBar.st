@@ -8,7 +8,7 @@ similarityBar
 	
 	panel := LAPanelElement new 
 		layout: (BlLinearLayout horizontal alignBottomLeft; cellSpacing: 1; yourself);
-		padding: (BlInsets all: 0);
+		padding: (BlInsets all: 5);
 		margin: (BlInsets all: 0);
 		background: (Color white alpha: 0.1).
 		"constraintsDo: [ :c | 

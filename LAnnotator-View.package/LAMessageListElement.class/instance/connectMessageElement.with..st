@@ -17,14 +17,12 @@ connectMessageElement: aMElement with: bMElement
 		].
 	
 	"add arc"
-	arc := LAArcConnectorElement new setVertical; yourself.
+	arc := LAArcMessageConnectorElement  aMessage: aMElement bMessage: bMElement.
 	(aMElement isBefore: bMElement) 
 		ifTrue: [ arc startAnchor: aMElement endAnchor: bMElement ]
 		ifFalse: [ arc startAnchor: bMElement endAnchor: aMElement ].
 	
 	aMElement elementArcs add: arc.
 	bMElement elementArcs add: arc.
-	
-	
 	
 	self addChild: arc

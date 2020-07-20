@@ -2,18 +2,18 @@ initialization
 createUntanglingModeControl
 	| cont |
 	untanglingModeButton := LASwitchableInfoElement new.  
-	untanglingModeButton deactivateText: 'Unpressed' activateText: 'Pressed'.    
+	untanglingModeButton deactivateText: 'Pressed' activateText: 'Unpessed'.    
 	untanglingModeButton deactivate.
 	
 	cont := LALayoutBoxElement horizontal
 		background: (Color gray alpha: 0.2);
-		margin: (BlInsets all: 0.3);
+		margin: (BlInsets all: 2);
 		yourself.
 	cont addChild: (LALayoutBoxElement horizontal 
-							addChild: (LABasicLabelElement text: '[Z]') ;
+							addChild: (LALabelElement text: '[Z]') ;
 							yourself).
 	cont addChild: (LALayoutBoxElement horizontal 
-							addChild: (LABasicLabelElement text: 'Switch unlink mode') ; 
+							addChild: (LALabelElement text: 'Switch unlink mode') ; 
 							alignLeft;
 							width: 150;
 							yourself).

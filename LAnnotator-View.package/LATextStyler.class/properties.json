@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "BlTextStyler",
+	"category" : "LAnnotator-View-widgets",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"selected",
+		"highlightList",
+		"selectableElement"
+	],
+	"name" : "LATextStyler",
+	"type" : "normal"
+}

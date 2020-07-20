@@ -2,18 +2,18 @@ initialization
 createMoveUpAnnotation
 	| cont |
 	moveUpButton := LASwitchableInfoElement new.
-	moveUpButton deactivateText: 'Unpressed' activateText: 'Pressed'.    
+	moveUpButton deactivateText: 'Pressed' activateText: 'Unpressed'.    
 	moveUpButton deactivate.
 	
 	cont := LALayoutBoxElement horizontal
 		background: (Color gray alpha: 0.2);
-		margin: (BlInsets all: 0.3);
+		margin: (BlInsets all: 2);
 		yourself.
 	cont addChild: (LALayoutBoxElement horizontal 
-							addChild: (LABasicLabelElement text: '[Up]') ;
+							addChild: (LALabelElement text: '[Up]') ;
 							yourself).
 	cont addChild: (LALayoutBoxElement horizontal 
-							addChild: (LABasicLabelElement text: 'Move up') ; 
+							addChild: (LALabelElement text: 'Move up') ; 
 							alignLeft;
 							width: 80;
 							yourself).

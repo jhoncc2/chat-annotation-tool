@@ -6,23 +6,23 @@ createUntanglingContinuousAnnotation
 	nextButton
 		when: BlClickEvent do: [
 			"self fireEvent: (LAUEventAnnotateNext new)"
-			self announceAction: LAAnnLinkAndFocusNext new
+			self announceAction: LAAnnDoLink new
 			].
 	
 	cont := LALayoutBoxElement horizontal
 		background: (Color gray alpha: 0.2);
-		margin: (BlInsets all: 0.3);
+		margin: (BlInsets all: 2);
 		yourself.
 	
 	cont addChild: (LALayoutBoxElement horizontal 
-							addChild: (LABasicLabelElement text: '[D]') ; 
+							addChild: (LALabelElement text: '[D]') ; 
 							yourself).
 							
 	cont addChild: (LALayoutBoxElement horizontal 
-							addChild: (LABasicLabelElement text: 'Link') ; 
+							addChild: (LALabelElement text: 'Link') ; 
 							alignLeft;
-							width: 150;
+							width: 100;
 							yourself).
-	"cont addChild: nextButton."
+	cont addChild: nextButton.
 	
 	self addChild: cont

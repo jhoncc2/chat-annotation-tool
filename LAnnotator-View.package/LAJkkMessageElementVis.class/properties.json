@@ -8,8 +8,10 @@
 	"instvars" : [
 		"textSimilarity",
 		"timeSimilarity",
-		"commSimilarity"
+		"commSimilarity",
+		"usernameElement",
+		"thumbnailEl"
 	],
-	"name" : "LAJkkElementVis",
+	"name" : "LAJkkMessageElementVis",
 	"type" : "normal"
 }

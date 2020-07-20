@@ -1,7 +1,10 @@
 logging
 handleKeyupEvent: anEvent
 	self announceAction: (LAAnnKeyUp key: anEvent key name).
-	
+	(anEvent key name = #W)
+			ifTrue: [
+				self announceAction: LAAnnRemoveAllLinksFromAnchor new.
+			].
 	(anEvent key name = #Z)
 			ifTrue: [
 				isLinkingActive := true.
@@ -37,10 +40,10 @@ handleKeyupEvent: anEvent
 		self announceAction: LAAnnDoLink new.
 		].
 	
-	anEvent key name = #S ifTrue: [
+	"anEvent key name = #S ifTrue: [
 		anEvent consumed: true.
 		self announceAction: LAAnnSelfLink new.
-	].
+	]."
 	"anEvent key name = #A ifTrue: [ 
 		anEvent consumed: true.
 		self isAnchorActive

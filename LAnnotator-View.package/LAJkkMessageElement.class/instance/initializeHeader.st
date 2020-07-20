@@ -7,7 +7,7 @@ initializeHeader
 	datetime :=  LALabelElement new text: self messageModel prettyDate.
 	
 	header := LALayoutBoxElement new 
-		"background: (Color gray alpha: 0.1);"
+		background: (Color red alpha: 1);
 		"constraintsDo: [ :c | c horizontal matchParent ];"
 		addChild: thumb;
 		addChild: indexLabel;

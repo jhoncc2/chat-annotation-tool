@@ -4,6 +4,7 @@ textElement
 	^ textElement ifNil: [ 
 		textElement :=  BrEditorElement new.
 		textEditor := BrTextEditor new.
+		
 		textElement editor: textEditor.
 	
 		textEditor when: BrTextEditorCursorMovedEvent do: [ :e |
@@ -14,5 +15,9 @@ textElement
 				self announceAction: (LAAnnTextSelected empty).
 			]
 			].
+		textEditor styler: (LATextStyler new
+				selectableElement: self; 
+				highlightList: self controller dataProvider chatParticipants; 
+				yourself).
 		textElement
 	]

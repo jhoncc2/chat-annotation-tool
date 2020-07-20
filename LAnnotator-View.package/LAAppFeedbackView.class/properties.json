@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "LAApplication",
+	"category" : "LAnnotator-View-Application",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"anchoredMessagePanel"
+	],
+	"name" : "LAAppFeedbackView",
+	"type" : "normal"
+}

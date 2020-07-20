@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "LAArcConnectorElement",
+	"category" : "LAnnotator-View-widgets",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"aMessage",
+		"bMessage"
+	],
+	"name" : "LAArcMessageConnectorElement",
+	"type" : "normal"
+}

@@ -7,7 +7,9 @@
 	],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"chatParticipants"
+	],
 	"name" : "LAJkkDataManager",
 	"type" : "normal"
 }

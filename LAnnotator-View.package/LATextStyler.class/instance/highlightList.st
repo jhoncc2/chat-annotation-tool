@@ -1,0 +1,3 @@
+private
+highlightList
+	^ highlightList

@@ -7,15 +7,15 @@ createSelfMessageAnnotation
 	
 	cont := LALayoutBoxElement horizontal
 		background: (Color gray alpha: 0.2);
-		margin: (BlInsets all: 0.3);
+		margin: (BlInsets all: 2);
 		yourself.
 	
 	cont addChild: (LALayoutBoxElement horizontal 
-							addChild: (LABasicLabelElement text: '[S]') ; 
+							addChild: (LALabelElement text: '[S]') ; 
 							yourself).
 							
 	cont addChild: (LALayoutBoxElement horizontal 
-							addChild: (LABasicLabelElement text: 'Self-message linking') ; 
+							addChild: (LALabelElement text: 'Self-message linking') ; 
 							alignLeft;
 							width: 150;
 							yourself).

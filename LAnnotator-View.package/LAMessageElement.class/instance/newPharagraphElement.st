@@ -1,3 +1,3 @@
 initialize
 newPharagraphElement
-	^ LAParagraphElement new controller: self controller; yourself.
+	^ LAParagraphElement basicNew controller: self controller; initialize; yourself.

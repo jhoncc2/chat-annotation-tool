@@ -1,3 +1,5 @@
 accessing
 text: aString
-	self roppedText: (BlRopedText string: aString asString)
+	messageRopedText := (BlRopedText string: aString asString).
+	self roppedText: messageRopedText 
+	

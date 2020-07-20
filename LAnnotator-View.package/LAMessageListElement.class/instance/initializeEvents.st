@@ -2,6 +2,10 @@ initialization
 initializeEvents
 	super initializeEvents.
 	
+	self onAction: LAAnnRemoveAllLinksFromAnchor do: [ :e |
+		self unlinkAllFromMessage: self messageAnchored.
+	].
+	
 	self when: BlMouseWheelEvent do: [ :e |
 		self app announcer announce: (LAAnnScroll new scrollEvent: e; scrollElement: self parent; yourself).
 		(self isAnchoredMessageOutOfView: (e vector y * 20) "=100") ifTrue: [ 
@@ -19,7 +23,7 @@ initializeEvents
 	
 	self onAction: LAAnnMoveHighlightedToAnchored do: [
 		self messageHighlighted onUnselected.
-		messagesHighlightedIndex := {(messageAnchoredIndex - 1). 0}  max.
+		messagesHighlightedIndex := {(messageAnchoredIndex - 1). 1}  max.
 		self onActionsChanged. 
 		].
 
@@ -41,8 +45,8 @@ initializeEvents
 	"self onAction: LAAnnLinkAndFocusNext do: [ self annotateNext ]."
 	self onAction: LAAnnSelfLink do: [ self annotateSelfMessage ].
 	self onAction: LAAnnDoLink do: [ self doLink ].
-	self onAction: LAAnnEnableLinking do: [ isLinkingActive = true. self onActionsChanged ].
-	self onAction: LAAnnEnableUnlinking do: [ isLinkingActive = false. self onActionsChanged ].
+	self onAction: LAAnnEnableLinking do: [ isLinkingActive := true. self onActionsChanged ].
+	self onAction: LAAnnEnableUnlinking do: [ isLinkingActive := false. self onActionsChanged ].
 
 	self onAction: LAAnnMessageClicked do: [ :ann | 
 		self onMessageHighlightedClicked: ann message messageModel.
