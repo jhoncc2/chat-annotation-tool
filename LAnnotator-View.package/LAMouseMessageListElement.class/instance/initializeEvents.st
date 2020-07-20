@@ -11,9 +11,9 @@ initializeEvents
 		self onActionsChanged.
 	].
 
-	"self onAction: LAAnnRemoveAllLinksFromAnchor do: [ :e |
+	self onAction: LAAnnRemoveAllLinksFromAnchor do: [ :e |
 		self unlinkAllFromMessage: self messageAnchored.
-	]."
+	].
 
 	self onAction: LAAnnDoLinkMessage do: [ :e |
 		self linkMessage: e aMessage to: e bMessage

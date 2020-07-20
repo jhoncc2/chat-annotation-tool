@@ -4,7 +4,8 @@ createSkipMessageButton
 	nextButton := LAButtonElement new.  
 	nextButton label: 'skip'.
 	nextButton when: BlClickEvent do: [
-			self announceAction: LAAnnMoveAnchoredMessage down
+			self announceAction: LAAnnMoveAnchoredMessage down.
+			LAAnnButtonPressed key: #SkipStrongSelectedMessage
 			].
 	
 	cont := LALayoutBoxElement horizontal

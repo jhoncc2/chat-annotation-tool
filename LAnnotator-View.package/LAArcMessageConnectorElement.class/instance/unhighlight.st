@@ -1,3 +1,3 @@
 accessing
 unhighlight
-	self border: (BlBorder paint: (Color black alpha: 0.3) width: 1).
+	self border: (BlBorder paint: (Color black alpha: 0.5) width: 1).

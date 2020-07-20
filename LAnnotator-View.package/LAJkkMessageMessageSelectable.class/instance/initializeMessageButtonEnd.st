@@ -13,9 +13,12 @@ initializeMessageButtonEnd
 		].
 	buttonB when: BlMouseLeaveEvent do: [ :e |
 		self announceAction: LAAnnUnPreselectAnchorMessage new.
+		self announceAction: (LAAnnMouseLeavePreselectAnchor message: self).
 		e consumed: true.
 		].
 	buttonB when: BlMouseEnterEvent do: [ :e |
 		self announceAction: LAAnnPreselectAnchorMessage new.
+		self announceAction: (LAAnnMouseEnterPreselectAnchor message: self).
+		
 		e consumed: true.
 		].

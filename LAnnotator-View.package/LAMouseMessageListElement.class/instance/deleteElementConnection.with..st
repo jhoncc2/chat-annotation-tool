@@ -1,6 +1,5 @@
-initialization
+loading
 deleteElementConnection: aMElement with: bMElement
-	| arc |
 	(aMElement isRelatedWithMessageElement: bMElement) ifFalse: [ ^ self ].
 	
 	aMElement deleteRelationWith: bMElement.
@@ -23,14 +22,14 @@ deleteElementConnection: aMElement with: bMElement
 		].
 		
 	"add arc"
-	arc := aMElement elementArcs select: [ :a | 
+	"arc := aMElement elementArcs select: [ :a | 
 		a isConnectionToMessageElement: aMElement  andMessageElement: bMElement ].
 
 	arc ifNotEmpty: [
 		aMElement elementArcs remove: arc first.
 		aMElement index = bMElement index ifFalse: [ bMElement elementArcs remove: arc first. ]
 		].
-	self removeChild: arc first.
+	self removeChild: arc first."
 	
 	
 	

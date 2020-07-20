@@ -1,3 +1,3 @@
 log
 logEvent: aStream
-	self shouldBeImplemented 
+	aStream << self logHeader 

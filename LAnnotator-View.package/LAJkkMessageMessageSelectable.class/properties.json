@@ -10,7 +10,8 @@
 		"timeSimilarity",
 		"commSimilarity",
 		"button",
-		"buttonB"
+		"buttonB",
+		"annotated"
 	],
 	"name" : "LAJkkMessageMessageSelectable",
 	"type" : "normal"

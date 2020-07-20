@@ -14,10 +14,12 @@ initializeMessageButtonStart
 	" "
 	button when: BlMouseLeaveEvent do: [ :e |
 		self announceAction: LAAnnEnableLinking new.
+		self announceAction: (LAAnnMouseLeaveUnlink message: self).
 		e consumed: true.
 		].
 	
 	button when: BlMouseEnterEvent do: [ :e |
 		self announceAction: LAAnnEnableUnlinking new.
+		self announceAction: (LAAnnMouseEnterUnlink message: self).
 		e consumed: true.
 		].

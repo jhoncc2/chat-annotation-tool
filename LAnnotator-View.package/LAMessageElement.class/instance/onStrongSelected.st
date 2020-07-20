@@ -4,4 +4,5 @@ onStrongSelected
 	strongSelected:=true.
 	self hightlightEdgeLinks.
 	self hightlightMentions: true.
-	self background: self strongSelectedColor 
+	self background: self strongSelectedColor. 
+	
