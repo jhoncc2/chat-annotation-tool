@@ -6,7 +6,8 @@ createUntanglingContinuousAnnotation
 	nextButton
 		when: BlClickEvent do: [
 			"self fireEvent: (LAUEventAnnotateNext new)"
-			self announceAction: LAAnnDoLink new
+			self announceAction: LAAnnDoLink new.
+			LAAnnButtonPressed key: #DoLinkButton
 			].
 	
 	cont := LALayoutBoxElement horizontal

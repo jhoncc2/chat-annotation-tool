@@ -4,7 +4,8 @@ createUnlinkAllFromMessageButton
 	nextButton := LAButtonElement new.  
 	nextButton label: 'remove-all'.
 	nextButton when: BlClickEvent do: [
-			self announceAction: LAAnnRemoveAllLinksFromAnchor new
+			self announceAction: LAAnnRemoveAllLinksFromAnchor new.
+			LAAnnButtonPressed key: #RemoveAllLinks
 			].
 	
 	cont := LALayoutBoxElement horizontal
