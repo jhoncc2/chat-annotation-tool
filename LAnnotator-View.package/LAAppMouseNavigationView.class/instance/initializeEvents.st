@@ -1,6 +1,13 @@
 panels
 initializeEvents
-	super initializeEvents.
+	"super initializeEvents."
+	
+	self onAction: LAAnnOnFinishLinking do: [ 
+		isControlPressed ifFalse: [ 
+			self announceAction: LAAnnMoveAnchoredMessage down. 
+			self announceAction: LAAnnScrollToAnchoredMessage new.
+			"self announceAction: LAAnnMoveHighlightedToAnchored new."
+		] ].
 	
 	self onAction: LAAnnMessageRightClicked do: [ :e |
 		self announceAction: (LAAnnDoLinkMessage new 
