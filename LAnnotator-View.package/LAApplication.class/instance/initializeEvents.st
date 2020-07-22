@@ -11,9 +11,11 @@ initializeEvents
 	self onAction: LAAnnDisableAnchor do: [ isAnchorActive := false ]."
 	
 	self onAction: LAAnnOnFinishLinking do: [ 
-		isControlPressed ifFalse: [ self announceAction: LAAnnMoveAnchoredMessage down. ].
-		self announceAction: LAAnnScrollToAnchoredMessage new.
-		self announceAction: LAAnnMoveHighlightedToAnchored new.	].
+		isControlPressed ifFalse: [ 
+			self announceAction: LAAnnMoveAnchoredMessage down. 
+			self announceAction: LAAnnScrollToAnchoredMessage new.
+			self announceAction: LAAnnMoveHighlightedToAnchored new.
+		] ].
 	
 	self when: BlKeyUpEvent do: [ :e | self handleKeyupEvent: e ].
 	self when: BlKeyDownEvent do: [ :e | self handleKeydownEvent: e ].
