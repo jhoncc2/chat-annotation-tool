@@ -8,10 +8,10 @@ initializePanels
 		c vertical fitContent.
 		c horizontal matchParent.
 		].
-	padding  := 5.
+	padding := 5.
 	
 	self controllers do: [ :c | 
-		listView := LAMessageListElement new.
+		listView := LAMessageViewListElement new.
 		listView messageClass: self messageClass.
 		listView padding: (BlInsets all: 5).
 		"listView border: (BlBorder paint: Color red)."

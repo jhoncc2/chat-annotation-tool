@@ -4,7 +4,7 @@ openOnDataProviders: dataManagers from: ini to: end
 	self newInstance.
 	
 	dataManagers first class = LAJkkDataManager ifTrue: [ 
-		element := LAJkkMessageElement.
+		element := LAJkkMessageElementDoubleRow.
 	] ifFalse: [ 
 		element := LADiscordMessageElement.
 	].
@@ -14,7 +14,7 @@ openOnDataProviders: dataManagers from: ini to: end
 	self instance initializePanels.
 	self instance loadMessagesFrom: ini to: end.
 	[space := BlSpace new.
-	space extent: (self width)@600.
+	space extent: 1000@600.
 	space root addChild: self instance asScrollableElement .
 	space show.] forkAndWait.
 

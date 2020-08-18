@@ -2,7 +2,7 @@ initialization
 initializeLayout
 	| lay |
 	super initializeLayout.
-	lay := BlLinearLayout horizontal
+	lay := BlLinearLayout vertical
 		cellSpacing: 1; yourself.
 	self
 		layout: lay yourself;

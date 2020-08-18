@@ -1,3 +1,3 @@
 initialization
 saveOnFile: aFile.
-	dataProvider storeMessagesTo: aFile
+	dataProvider storeLinksTo: aFile
