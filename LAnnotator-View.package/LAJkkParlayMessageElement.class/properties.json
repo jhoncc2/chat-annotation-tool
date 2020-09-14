@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "LAJkkMessageElement",
+	"category" : "LAnnotator-View-Message",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"textSimilarity",
+		"timeSimilarity",
+		"commSimilarity",
+		"button",
+		"buttonB",
+		"annotated"
+	],
+	"name" : "LAJkkParlayMessageElement",
+	"type" : "normal"
+}

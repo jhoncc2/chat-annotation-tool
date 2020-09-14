@@ -1,0 +1,3 @@
+initialization
+refreshMessageText
+	self messageElements do: #refreshMessageText

@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "LABesierArcConnectorElement",
+	"category" : "LAnnotator-View-widgets",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"aMessage",
+		"bMessage"
+	],
+	"name" : "LABessierArcMessageConnectorElement",
+	"type" : "normal"
+}

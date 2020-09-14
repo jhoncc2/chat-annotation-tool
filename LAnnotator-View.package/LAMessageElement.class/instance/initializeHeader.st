@@ -6,7 +6,7 @@ initializeHeader
 	datetime :=  LALabelElement new text: self messageModel timestamp asDateAndTime asString.
 	
 	header := LALayoutBoxElement new 
-		addChild: username; 
+		addChild: username;
 	 	addChild: datetime; 
 		horizontalLayout; 
 		yourself.

@@ -1,0 +1,3 @@
+accessing
+removeAnnouncementLinks
+	messageModels do: #removeLinksIfAnnouncement.

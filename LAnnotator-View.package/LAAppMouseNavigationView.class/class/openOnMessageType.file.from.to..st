@@ -7,7 +7,7 @@ openOnMessageType: dataProviderClass file: readf from: ini to: end
 	
 	"TODO: modify element defined here"
 	dataProviderClass = LAJkkDataManager ifTrue: [ 
-		element := LAJkkMessageMessageSelectable.
+		element := LAJkkMouseMessageElement.
 	] ifFalse: [ 
 		element := LADiscordMessageElement.
 	].

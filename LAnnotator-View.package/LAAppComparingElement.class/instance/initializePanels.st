@@ -11,7 +11,7 @@ initializePanels
 	padding := 5.
 	
 	self controllers do: [ :c | 
-		listView := LAMessageViewListElement new.
+		listView := LAComparingViewListElement new.
 		listView messageClass: self messageClass.
 		listView padding: (BlInsets all: 5).
 		"listView border: (BlBorder paint: Color red)."

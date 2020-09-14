@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "LAMessageViewListElement",
+	"name" : "LAParlayListElement",
 	"type" : "normal"
 }

@@ -1,3 +1,3 @@
 initialization
 initializeEvents
-	
+	super initializeEvents

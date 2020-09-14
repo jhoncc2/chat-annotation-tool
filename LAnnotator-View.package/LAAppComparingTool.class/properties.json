@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "LAApplication",
+	"category" : "LAnnotator-View-Application",
+	"classinstvars" : [
+		"dps"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"listViews",
+		"dataProviders",
+		"controllers",
+		"messageClass"
+	],
+	"name" : "LAAppComparingTool",
+	"type" : "normal"
+}

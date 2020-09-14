@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "LAMessageListElement",
+	"category" : "LAnnotator-View-MessageList",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "LAComparingViewListElement",
+	"type" : "normal"
+}

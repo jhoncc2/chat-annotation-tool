@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "BlBezierElement",
+	"category" : "LAnnotator-View-widgets",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"controlPoints"
+	],
+	"name" : "LABesierArcConnectorElement",
+	"type" : "normal"
+}
