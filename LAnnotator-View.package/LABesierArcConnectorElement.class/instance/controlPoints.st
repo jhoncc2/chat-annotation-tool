@@ -1,4 +1,4 @@
 accessing
 controlPoints
-	^ controlPoints := controlPoints ifNil: [{(75 @ 140). (100 @ 140). (100 @ 240). (75 @ 240)}].
+	^ controlPoints := controlPoints ifNil: [{(205 @ 140). (100 @ 140). (100 @ 240). (205 @ 240)}].
 	

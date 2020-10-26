@@ -11,7 +11,7 @@ connectMessageElement: aMElement with: bMElement allowArcs: arckBool
 	"update color group"
 	v := { aMElement. bMElement } select: #visited.
 	v isEmpty 
-		ifTrue: [ aMElement colorConnectedMessages: self colorPicker nextColor ]
+		ifTrue: [ aMElement colorConnectedMessages: aMElement groupedColor ]
 		ifFalse: [ 
 			v first resetVisitingCheck. 
 			v first colorConnectedMessages: v first groupedColor 

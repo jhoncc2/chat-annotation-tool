@@ -14,7 +14,7 @@ startAnchor: aBlElement endAnchor: bBlElement
 	tmp1 := tmp2 origin x @ ((tmp2 origin y + tmp2 corner y) / 2).
 	tmp4 := tmp3 origin x @ ((tmp3 origin y + tmp3 corner y) / 2).
 	
-	alpha := (tmp1 y - tmp4 y) abs *0.2.
+	alpha := (tmp1 y - tmp4 y) abs * 0.4.
 	controlPoints := {tmp1. ((tmp1 x + alpha) @ tmp1 y). ((tmp4 x + alpha)@ tmp4 y ). tmp4}.
 	
 	self

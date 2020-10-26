@@ -7,6 +7,7 @@ initializeEvents
 			self announceAction: LAAnnMoveAnchoredMessage down. 
 			self announceAction: LAAnnScrollToAnchoredMessage new.
 			"self announceAction: LAAnnMoveHighlightedToAnchored new."
+			anchoredMessagePanel hide.
 		] ].
 	
 	self onAction: LAAnnMessageRightClicked do: [ :e |
@@ -32,7 +33,8 @@ initializeEvents
 		].
 	
 	self onAction: LAAnnMessageAnchoredMoveButton  do: [ :e |
-		self announceAction: (LAAnnMoveAnchoredMessageToIndex index: (listView messageElements indexOf: e message))
+		self announceAction: (LAAnnMoveAnchoredMessageToIndex index: (listView messageElements indexOf: e message)).
+		anchoredMessagePanel hide.
 		].
 
 	self onAction: LAAnnMessageUnlinkButton  do: [ :e |

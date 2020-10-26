@@ -1,6 +1,6 @@
 loading
 deleteElementConnection: aMElement with: bMElement
-	| arc |
+	| arcs |
 	(aMElement isRelatedWithMessageElement: bMElement) ifFalse: [ ^ self ].
 	
 	aMElement deleteRelationWith: bMElement.
@@ -21,16 +21,16 @@ deleteElementConnection: aMElement with: bMElement
 		] ifFalse: [
 			bMElement colorConnectedMessages: bMElement groupedColor  
 		].
-		
-	"add arc"
-	arc := aMElement elementArcs select: [ :a | 
+
+	"remove arc"
+	arcs := aMElement elementArcs select: [ :a | 
 		a isConnectionToMessageElement: aMElement  andMessageElement: bMElement ].
 
-	arc ifNotEmpty: [
-		aMElement elementArcs remove: arc first.
-		aMElement index = bMElement index ifFalse: [ bMElement elementArcs remove: arc first. ]
+	arcs ifNotEmpty: [
+		aMElement elementArcs remove: arcs first.
+		aMElement index = bMElement index ifFalse: [ bMElement elementArcs remove: arcs first. ]
 		].
-	self removeChild: arc first.
+	self removeChild: arcs first.
 	
 	
 	
