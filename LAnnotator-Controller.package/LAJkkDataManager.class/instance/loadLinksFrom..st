@@ -1,6 +1,7 @@
 parsing
 loadLinksFrom: aUriString
 	| indexes |
+	aUriString asFileReference isFile ifFalse: [ ^ self ].
 	aUriString asFileReference readStreamDo: [ :stream |
 	[stream atEnd ] whileFalse: [ 
 			indexes := ' ' split: stream nextLine.	

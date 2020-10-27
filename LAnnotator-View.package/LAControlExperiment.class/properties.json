@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "LAnnotator-View-Application",
+	"classinstvars" : [
+		"annotationFile",
+		"author",
+		"logger",
+		"dataManager"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "LAControlExperiment",
+	"type" : "normal"
+}
