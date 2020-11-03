@@ -2,6 +2,9 @@ panels
 initializeEvents
 	"super initializeEvents."
 	
+	self when: BlKeyUpEvent do: [ :e | self handleKeyupEvent: e ].
+	self when: BlKeyDownEvent do: [ :e | self handleKeydownEvent: e ].
+	
 	self onAction: LAAnnOnFinishLinking do: [ 
 		isControlPressed ifFalse: [ 
 			self announceAction: LAAnnMoveAnchoredMessage down. 

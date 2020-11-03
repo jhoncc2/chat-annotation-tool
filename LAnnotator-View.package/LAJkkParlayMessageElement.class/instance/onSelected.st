@@ -9,5 +9,5 @@ onSelected
 					build).
 	strongSelected 
 		ifTrue: [ self background: self strongSelectedColor ]
-		"ifFalse: [ self background: self groupedColor ]"
+		ifFalse: [ self background: self groupedColor ]
 	
