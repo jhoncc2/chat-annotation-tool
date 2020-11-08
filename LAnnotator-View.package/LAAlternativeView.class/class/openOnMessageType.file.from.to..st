@@ -18,7 +18,7 @@ openOnMessageType: dataProviderClass file: readf from: ini to: end
 	self instance messageClass: element.
 	
 	self instance loadMessagesFrom: ini to: end.
-	
+	self instance requestFocus.
 	space := BlSpace new.
 	space extent: 700@600.
 	space root addChild: self instance.

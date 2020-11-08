@@ -2,7 +2,7 @@ initialization
 createUnlinkAllFromMessageButton
 	| cont nextButton |
 	nextButton := LAButtonElement new.  
-	nextButton label: 'remove-all-links'.
+	nextButton label: 'remove-all-links [U]'.
 	nextButton when: BlClickEvent do: [
 			self announceAction: LAAnnRemoveAllLinksFromAnchor new.
 			LAAnnButtonPressed key: #RemoveAllLinks

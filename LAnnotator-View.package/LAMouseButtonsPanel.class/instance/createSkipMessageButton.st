@@ -13,11 +13,11 @@ createSkipMessageButton
 		yourself.
 
 	cont addChild: (LALayoutBoxElement horizontal 
-							addChild: (LABasicLabelElement text: 'Skip selected message') ; 
+							addChild: (LABasicLabelElement text: 'Move selected message up[W]/down[S]') ; 
 							alignLeft;
-							width: 150;
+							width: 240;
 							yourself).
-	cont addChild: nextButton.
+	"cont addChild: nextButton."
 	cont margin: (BlInsets left: 4).
 	
 	self addChild: cont

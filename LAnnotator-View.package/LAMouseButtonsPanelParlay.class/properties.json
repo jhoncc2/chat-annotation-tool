@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "LAMouseButtonsPanel",
+	"category" : "LAnnotator-View-Panel",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "LAMouseButtonsPanelParlay",
+	"type" : "normal"
+}

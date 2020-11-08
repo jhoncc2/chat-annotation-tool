@@ -5,5 +5,6 @@ initialize
 	isAnchorActive := false.
 	isControlPressed := false.
 	super initialize.
+	self requestFocus.
 	
 	
