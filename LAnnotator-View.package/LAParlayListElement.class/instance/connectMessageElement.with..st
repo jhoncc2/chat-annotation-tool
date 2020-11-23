@@ -23,6 +23,8 @@ connectMessageElement: aMElement with: bMElement
 		ifFalse: [ arc startAnchor: bMElement endAnchor: aMElement ].
 	
 	aMElement elementArcs add: arc.
-	bMElement elementArcs add: arc.
+	aMElement == bMElement ifFalse: [
+		bMElement elementArcs add: arc.
+	].
 	
 	self addChild: arc
